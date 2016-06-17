@@ -1,0 +1,50 @@
+<ion-view view-title="Register" name="register-view">
+  <ion-content>
+    <div class="row" id="head">
+      <div class="col col-offset-33" id="logo">Estalaf</div>
+    </div>
+    <div class="row">
+      <div class="col col-offset-20"> Sign Up with an Email address</div>
+    </div>
+    <form name="registrationForm" novalidate ng-submit="registrationForm.$valid && submit()">
+      <div class="list padding-horizontal">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">First Name</span>
+          <input type="text" placeholder="First Name" class="input" required>
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Last Name</span>
+          <input type="text" placeholder="Last Name" class="input" required>
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="Email" class="input" required>
+          <!-- <i class="ion-checkmark-circled padding-horizonta regSuccess" pull></i><i class="ion-close-circled error padding-horizontal" class="useFail"></i> -->
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="Password" class="input" required>
+        </label>
+      </div>
+
+      <div class="padding-horizontal">
+        <button class="button button-block button-positive "><i class="icon ion-person"></i> Create Account
+        </button>
+      </div>
+    </form>
+
+    <div class="row padding-top">
+      <div class="col col-offset-50">OR</div>
+    </div>
+
+    <div class="row padding-top padding-horizontal">
+      <button class="button button-block button-positive"><i class="icon ion-social-google-outline"></i> Sign up with Google
+      </button>
+    </div>
+
+    <div class="row padding-top">
+      <div class="col col-offset-20">Already have an account? <a href="#/login">Login</a></div>
+    </div>
+
+  </ion-content>
+</ion-view>

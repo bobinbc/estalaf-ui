@@ -1,0 +1,60 @@
+/*Registration Template*/
+
+#logo {
+  font-size: 30px;
+}
+#head {
+  height: 50px;
+  margin-top: 20px;
+  font-family: 'Open Sans', arial;
+}
+
+/*.input{
+  width:774px !important;
+}*/
+/*End of Registration template*/
+
+
+/*Login Template*/
+
+#loginHeader {
+  padding: 80px 0px;
+}
+.item.item-input.loginTextbox {
+  border-radius: 20px;
+  padding-left: 18px;
+  position: relative;
+}
+.item.item-input.item-floating-label.loginTextbox input {
+  padding-left: 12px;
+  height: 22px !important;
+  font-size: 18px;
+  padding-top: 0px !important;
+}
+.input-label.loginLabel {
+  font-size: 13px !important;
+  height: 18px;
+  padding-left: 18px;
+  color: #adad85;
+}
+.button.button-block.button-positive.loginButton {
+  border-radius: 18px;
+}
+#userSuccess {
+  color: #5cb85c;
+}
+#userFail {
+  color: #d9534f;
+}
+#passSuccess {
+  color: #5cb85c;
+}
+#passFail {
+  color: #d9534f;
+}
+.success {
+  border-color: green;
+}
+.fail {
+  border-color: red;
+}
