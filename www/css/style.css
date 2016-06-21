@@ -9,9 +9,26 @@
   font-family: 'Open Sans', arial;
 }
 
-/*.input{
-  width:774px !important;
-}*/
+/*Validation colors for Registration page*/
+
+
+/*This is for success validation*/
+
+.regfail {
+  border-left-color: #d9534f;
+  border-left-width: 4px;
+}
+
+/*This is for success validation*/
+
+.regsuccess {
+  border-left-color: #5cb85c;
+  border-left-width: 4px;
+}
+
+/*end of validation for REgistration page*/
+
+
 /*End of Registration template*/
 
 
@@ -40,21 +57,37 @@
 .button.button-block.button-positive.loginButton {
   border-radius: 18px;
 }
+
+/*Validation colors for login page*/
+
+
+/*This is for success validation*/
+
+.success {
+  border-color: #5cb85c;
+  border-width: 2px;
+}
 #userSuccess {
   color: #5cb85c;
-}
-#userFail {
-  color: #d9534f;
 }
 #passSuccess {
   color: #5cb85c;
 }
+
+/*This is for failure validation*/
+
+.fail {
+  border-color: #d9534f;
+  border-width: 2px;
+}
+#userFail {
+  color: #d9534f;
+}
 #passFail {
   color: #d9534f;
 }
-.success {
-  border-color: green;
-}
-.fail {
-  border-color: red;
-}
+
+/*end of validation for login page*/
+
+
+/*end of login template*/

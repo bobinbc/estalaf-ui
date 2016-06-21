@@ -6,24 +6,24 @@
     <div class="row">
       <div class="col col-offset-20"> Sign Up with an Email address</div>
     </div>
-    <form name="registrationForm" novalidate ng-submit="registrationForm.$valid && submit()">
+    <form name="regForm" ng-submit="regForm.$valid && regSubmit()" novalidate>
       <div class="list padding-horizontal">
-        <label class="item item-input item-floating-label">
+        <label class="item item-input item-floating-label" ng-class="{regfail:(regForm.regFirstname.$dirty && regForm.regFirstname.$invalid)||(regForm.regFirstname.$pristine && regForm.$submitted),regsuccess:regForm.regFirstname.$dirty && regForm.regFirstname.$valid}">
           <span class="input-label">First Name</span>
-          <input type="text" placeholder="First Name" class="input" required>
+          <input type="text" placeholder="First Name" name="regFirstname" class="input" ng-model="user.firstname" ng-pattern="/^[a-zA-Z]*$/" required>
         </label>
-        <label class="item item-input item-floating-label">
+        <label class="item item-input item-floating-label" ng-class="{regfail:(regForm.regLastname.$dirty && regForm.regLastname.$invalid)||(regForm.regLastname.$pristine && regForm.$submitted),regsuccess:regForm.regLastname.$dirty && regForm.regLastname.$valid}">
           <span class="input-label">Last Name</span>
-          <input type="text" placeholder="Last Name" class="input" required>
+          <input type="text" placeholder="Last Name" name="regLastname" class="input" ng-model="user.lastname" ng-pattern="/^[a-zA-Z]*$/" required>
         </label>
-        <label class="item item-input item-floating-label">
+        <label class="item item-input item-floating-label" ng-class="{regfail:(regForm.regEmail.$dirty && regForm.regEmail.$invalid) || (regForm.regEmail.$pristine && regForm.$submitted),regsuccess:regForm.regEmail.$dirty && regForm.regEmail.$valid}">
           <span class="input-label">Email</span>
-          <input type="email" placeholder="Email" class="input" required>
-          <!-- <i class="ion-checkmark-circled padding-horizonta regSuccess" pull></i><i class="ion-close-circled error padding-horizontal" class="useFail"></i> -->
+          <input type="email" placeholder="Email" name="regEmail" class="input" ng-model="user.email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
+          <!-- <i class="ion-checkmark-circled padding-horizontal regSuccess" padding-bottom></i><i class="ion-close-circled error padding-horizontal" class="useFail"></i> -->
         </label>
-        <label class="item item-input item-floating-label">
+        <label class="item item-input item-floating-label" ng-class="{regfail:(regForm.regPassword.$dirty && regForm.regPassword.$invalid)||(regForm.regPassword.$pristine && regForm.$submitted),regsuccess:regForm.regPassword.$dirty && regForm.regPassword.$valid}">
           <span class="input-label">Password</span>
-          <input type="password" placeholder="Password" class="input" required>
+          <input type="password" placeholder="Password" name="regPassword" class="input" ng-model="user.password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
         </label>
       </div>
 
@@ -32,7 +32,6 @@
         </button>
       </div>
     </form>
-
     <div class="row padding-top">
       <div class="col col-offset-50">OR</div>
     </div>
