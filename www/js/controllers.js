@@ -31,6 +31,7 @@ angular.module('estalaf.controllers', [])
         }
       })
       .success(function(data) {
+        console.log($scope.user);
         if (data.success) {
           $state.go('login');
         } else if (data.errors) {

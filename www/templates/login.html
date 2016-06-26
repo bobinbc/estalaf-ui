@@ -13,7 +13,7 @@
       </div>
       <div class="list list-inset padding-horizontal">
         <label class="item item-input" ng-class="{fail:(loginForm.userPassword.$dirty && loginForm.userPassword.$invalid)||(loginForm.userPassword.$pristine && loginForm.$submitted),success:loginForm.userPassword.$dirty && loginForm.userPassword.$valid}">
-          <input type="text" name="userPassword" ng-model="data.password" placeholder="Password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
+          <input type="password" name="userPassword" ng-model="data.password" placeholder="Password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
           <i class="ion-checkmark-circled padding-horizontal" ng-show="loginForm.userPassword.$dirty && loginForm.userPassword.$valid" id="passSuccess"></i><i class="ion-close-circled error padding-horizontal" ng-show="(loginForm.userPassword.$dirty && loginForm.userPassword.$invalid)||(loginForm.userPassword.$pristine && loginForm.$submitted)"
               id="passFail"></i>
         </label>
