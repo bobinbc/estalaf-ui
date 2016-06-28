@@ -1,0 +1,24 @@
+<ion-view>
+  <div class="bar bar-header bar-dark">
+    <h1 class="title">Create Club</h1>
+  </div>
+    <form name="createClubForm" ng-submit="createClub()">
+  <div class="card">
+    <div>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="Club Name" ng-model="clubName" required>
+        </label>
+      </div>
+      <div class="padding">
+        <textarea placeholder="Description" rows="10" class="col responsive-lg" ng-model="clubDescription" required>
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="padding">
+    <button  class="button button-block ion-ios-compose button-positive"> Create</button>
+  </div>
+</form>
+</ion-view>

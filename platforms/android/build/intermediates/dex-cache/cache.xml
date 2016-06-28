@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\NITHIN\Documents\MSD\capstone\estalafUI\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e18793fbcb26824eac5ecf299b4104dab31f6a41">
+        <dex dex="C:\Users\NITHIN\Documents\MSD\capstone\estalafUI\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_b4994bd2ea54dcba8ee5fe612ba11030c14186bf.jar" />
+    </item>
+
+</items>
