@@ -6,5 +6,9 @@
     {
         "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi-v4\\screen.png",
         "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui2\\trunk\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi-v4\\screen.png",
+        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui2\\trunk\\platforms\\android\\res\\drawable-land-xxhdpi\\screen.png"
     }
 ]
