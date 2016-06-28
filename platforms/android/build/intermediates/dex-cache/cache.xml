@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\NITHIN\Documents\MSD\capstone\estalafUI\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jar="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui2\trunk\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.2"
-        sha1="e18793fbcb26824eac5ecf299b4104dab31f6a41">
-        <dex dex="C:\Users\NITHIN\Documents\MSD\capstone\estalafUI\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_b4994bd2ea54dcba8ee5fe612ba11030c14186bf.jar" />
+        revision="23.0.1"
+        sha1="aef4ea773dcdafd9df6686dc6c4d44b6bff7466e">
+        <dex dex="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui2\trunk\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_2009219d693be4266b832453bdd3f5f0be1fe637.jar" />
     </item>
 
 </items>

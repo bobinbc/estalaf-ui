@@ -64,5 +64,15 @@ angular.module('estalaf.controllers', ['ngStorage'])
       }
     });
   }
+.controller('HomeCtrl', function ($scope, $cordovaBarcodeScanner) {
 
+    $scope.scanBarcode = function () {
+        $cordovaBarcodeScanner.scan().then(function (imageData) {
+            alert(imageData.text);
+            console.log("format" + imageData.format);
+        }, function (error) {
+            console.log("An Error: " + error);
+        });
+    }
+});
 });

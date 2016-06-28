@@ -38,6 +38,7 @@ angular.module('estalaf', ['ionic','estalaf.controllers'])
     .state('home',{
       url:'/home',
       templateUrl:'templates/home.html',
+      controller:'HomeCtrl'
     });
   $urlRouterProvider.otherwise('/register');
 });
