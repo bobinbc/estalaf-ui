@@ -1,4 +1,4 @@
-angular.module('estalaf.controllers', ['ngStorage','ngCordova'])
+angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
 
 .controller('LoginCtrl', function($scope, $ionicPopup, $state, $http, $localStorage) {
   $scope.signIn = function() {
@@ -12,8 +12,8 @@ angular.module('estalaf.controllers', ['ngStorage','ngCordova'])
       },
       success: function(data, status) {
         if (data.success == true) {
-            $localStorage.token = data.token.value;
-            console.log($localStorage.token);
+          $localStorage.token = data.token.value;
+          console.log($localStorage.token);
           console.log(data);
           $state.go('create');
         } else if (data.success == false) {
@@ -54,35 +54,35 @@ angular.module('estalaf.controllers', ['ngStorage','ngCordova'])
     };
   })
   .controller('CreateCtrl', function($scope, $http, $ionicPopup, $state, $localStorage) {
-      $scope.createClub = function() {
-          $.ajax({
-            type: 'POST',
-            url: 'http://localhost:5000/clubs',
-            data: {
-              'clubName': $scope.clubName,
-              'clubDescription': $scope.clubDescription,
-              'token': $localStorage.token
-            },
-            success: function(data, status) {
-              console.log(data);
-              if (data.success == true) {
-                console.log(data);
-                $state.go('home');
-              } else if (data.success == false) {
-                console.log("fail");
-              }
-            }
-          });
-        }
-      })
-        .controller('HomeCtrl', function($scope, $cordovaBarcodeScanner) {
-
-          $scope.scanBarcode = function() {
-            $cordovaBarcodeScanner.scan().then(function(imageData) {
-              alert(imageData.text);
-              console.log("format" + imageData.format);
-            }, function(error) {
-              console.log("An Error: " + error);
-            });
+    $scope.createClub = function() {
+      $.ajax({
+        type: 'POST',
+        url: 'http://localhost:5000/clubs',
+        data: {
+          'clubName': $scope.clubName,
+          'clubDescription': $scope.clubDescription,
+          'token': $localStorage.token
+        },
+        success: function(data, status) {
+          console.log(data);
+          if (data.success == true) {
+            console.log(data);
+            $state.go('home');
+          } else if (data.success == false) {
+            console.log("fail");
           }
-        });
+        }
+      });
+    }
+  })
+  .controller('HomeCtrl', function($scope, $cordovaBarcodeScanner) {
+
+    $scope.scanBarcode = function() {
+      $cordovaBarcodeScanner.scan().then(function(imageData) {
+        alert(imageData.text);
+        console.log("format" + imageData.format);
+      }, function(error) {
+        console.log("An Error: " + error);
+      });
+    }
+  });
