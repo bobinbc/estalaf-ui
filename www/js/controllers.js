@@ -85,4 +85,27 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
         console.log("An Error: " + error);
       });
     }
+  })
+.controller('AddResCtrl', function($scope,$http, $ionicPopup, $state) {
+
+    $scope.addResource = function() {
+      $.ajax({
+        type: 'POST',
+        url: 'http://localhost:5000/resource',
+        data: {
+          'resourceName': $scope.resourceName,
+          'resourceDescription': $scope.resourceDescription,
+          'token': $localStorage.token
+        },
+        success: function(data, status) {
+          console.log(data);
+          if (data.success == true) {
+            console.log(data);
+            $state.go('home');
+          } else if (data.success == false) {
+            console.log("fail");
+          }
+        }
+      });
+    }
   });

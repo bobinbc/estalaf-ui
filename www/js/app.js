@@ -39,6 +39,11 @@ angular.module('estalaf', ['ionic','estalaf.controllers'])
       url:'/home',
       templateUrl:'templates/home.html',
       controller:'HomeCtrl'
+    })
+    .state('addResource',{
+      url:'/addResource',
+      templateUrl:'templates/addResource.html',
+      controller:'AddResCtrl'
     });
   $urlRouterProvider.otherwise('/register');
 });
