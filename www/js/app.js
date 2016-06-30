@@ -1,4 +1,4 @@
-angular.module('estalaf', ['ionic','estalaf.controllers'])
+angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -29,6 +29,11 @@ angular.module('estalaf', ['ionic','estalaf.controllers'])
       url: '/login',
       templateUrl: 'templates/login.html',
       controller:'LoginCtrl'
+    })
+    .state('joinClub',{
+      url:'/joinClub',
+      templateUrl:'templates/joinClub.html',
+      controller:'JoinCtrl'
     })
     .state('create',{
       url:'/create',

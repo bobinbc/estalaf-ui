@@ -23,7 +23,7 @@
         </label>
         <label class="item item-input item-floating-label" ng-class="{regfail:(regForm.regPassword.$dirty && regForm.regPassword.$invalid)||(regForm.regPassword.$pristine && regForm.$submitted),regsuccess:regForm.regPassword.$dirty && regForm.regPassword.$valid}">
           <span class="input-label">Password</span>
-          <input type="password" placeholder="Password" name="regPassword" class="input" ng-model="password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
+          <input type="password" placeholder="Password" name="regPassword" class="input" on-touch="passwordTouch()" ng-model="password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
         </label>
       </div>
 

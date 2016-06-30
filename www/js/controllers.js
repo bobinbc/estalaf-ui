@@ -15,7 +15,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
           $localStorage.token = data.token.value;
           console.log($localStorage.token);
           console.log(data);
-          $state.go('create');
+          $state.go('joinClub');
         } else if (data.success == false) {
           var alertPopup = $ionicPopup.alert({
             title: 'Login failed!',
@@ -27,10 +27,17 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
   }
 })
 
-.controller('RegisterCtrl', function($scope, $location, $http, $state) {
+.controller('RegisterCtrl', function($scope, $location,$ionicPopup, $http, $state) {
     $scope.loginPage = function(path) {
       $location.path(path);
     };
+
+    $scope.passwordTouch=function(){
+      var alertPopup = $ionicPopup.alert({
+        title: 'Password Format',
+        template: 'It should contain alphanumeric & special charectors'
+      });
+    }
 
     $scope.regSubmit = function() {
       $.ajax({
@@ -52,6 +59,36 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
         }
       });
     };
+  })
+  .controller('JoinCtrl',function ($scope,$state,$ionicModal){
+    // $scope.join=function(){
+    //   $state.go('create');
+    // }
+    $ionicModal.fromTemplateUrl('templates/createClub.html', {
+    scope: $scope,
+    animation: 'fade-in-scale'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+  $scope.openModal = function() {
+    $scope.modal.show();
+  };
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+  // Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+  // Execute action on hide modal
+  $scope.$on('modal.hidden', function() {
+    // Execute action
+  });
+  // Execute action on remove modal
+  $scope.$on('modal.removed', function() {
+    // Execute action
+  });
+
   })
   .controller('CreateCtrl', function($scope, $http, $ionicPopup, $state, $localStorage) {
     $scope.createClub = function() {
@@ -75,16 +112,19 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       });
     }
   })
-  .controller('HomeCtrl', function($scope, $cordovaBarcodeScanner) {
+  .controller('HomeCtrl', function($scope, $cordovaBarcodeScanner,$ionicSideMenuDelegate) {
 
-    $scope.scanBarcode = function() {
-      $cordovaBarcodeScanner.scan().then(function(imageData) {
-        alert(imageData.text);
-        console.log("format" + imageData.format);
-      }, function(error) {
-        console.log("An Error: " + error);
-      });
-    }
+    // $scope.scanBarcode = function() {
+    //   $cordovaBarcodeScanner.scan().then(function(imageData) {
+    //     alert(imageData.text);
+    //     console.log("format" + imageData.format);
+    //   }, function(error) {
+    //     console.log("An Error: " + error);
+    //   });
+    // }
+    $scope.toggleLeft = function() {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
   })
 .controller('AddResCtrl', function($scope,$http, $ionicPopup, $state) {
 
