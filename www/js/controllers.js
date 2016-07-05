@@ -5,7 +5,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
 
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:5000/login',
+      url: 'https://estalaf-production.herokuapp.com/login',
       data: {
         'email': $scope.email,
         'password': $scope.password
@@ -13,7 +13,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       success: function(data, status) {
         if (data.success == true) {
           $localStorage.token = data.token.value;
-          $state.go('home');
+          $state.go('joinClub');
         } else if (data.success == false) {
           var alertPopup = $ionicPopup.alert({
             title: 'Login failed!',
@@ -33,7 +33,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
     $scope.regSubmit = function() {
       $.ajax({
         type: 'POST',
-        url: 'http://localhost:5000/users',
+        url: 'https://estalaf-production.herokuapp.com/users',
         data: {
           'firstName': $scope.firstName,
           'lastName': $scope.lastName,
@@ -55,7 +55,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
     $scope.joinClub = function() {
       $.ajax({
         type: 'POST',
-        url: 'http://localhost:5000/clubs/users',
+        url: 'https://estalaf-production.herokuapp.com/clubs/users',
         data: {
           'clubCode': $scope.clubCode,
           'token': $localStorage.token
@@ -78,7 +78,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
     $scope.createClub = function() {
       $.ajax({
         type: 'POST',
-        url: 'http://localhost:5000/clubs',
+        url: 'https://estalaf-production.herokuapp.com/clubs',
         data: {
           'clubName': $scope.clubName,
           'clubDescription': $scope.clubDescription,
@@ -106,7 +106,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
     //   }, function(error) {
     //     console.log("An Error: " + error);
     //   });
-    // }
+    // };
     $scope.toggleLeft = function() {
       $ionicSideMenuDelegate.toggleLeft();
     };
@@ -131,7 +131,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
           onTap: function(e) {
             $.ajax({
               type: 'POST',
-              url: 'http://localhost:5000/clubs/users',
+              url: 'https://estalaf-production.herokuapp.com/clubs/users',
               data: {
                 'clubCode': $scope.data.clubCode,
                 'token': $localStorage.token
@@ -174,12 +174,12 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
     $scope.addResource = function() {
       $.ajax({
         type: 'POST',
-        url: 'http://localhost:5000/resources',
+        url: 'https://estalaf-production.herokuapp.com/resources',
         data: {
           'resourceName': $scope.resourceName,
           'resourceDescription': $scope.resourceDescription,
           'resourceCode': 'xyz',
-          'clubId': 3,
+          'clubId': 4,
           // 'resourceMcode':
           // 'manual':true,
           // 'resourceQuantity':
