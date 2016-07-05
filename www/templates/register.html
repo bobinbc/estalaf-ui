@@ -19,7 +19,6 @@
         <label class="item item-input item-floating-label" ng-class="{regfail:(regForm.regEmail.$dirty && regForm.regEmail.$invalid) || (regForm.regEmail.$pristine && regForm.$submitted),regsuccess:regForm.regEmail.$dirty && regForm.regEmail.$valid}">
           <span class="input-label">Email</span>
           <input type="email" placeholder="Email" name="regEmail" class="input" ng-model="email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
-          <!-- <i class="ion-checkmark-circled padding-horizontal regSuccess" padding-bottom></i><i class="ion-close-circled error padding-horizontal" class="useFail"></i> -->
         </label>
         <label class="item item-input item-floating-label" ng-class="{regfail:(regForm.regPassword.$dirty && regForm.regPassword.$invalid)||(regForm.regPassword.$pristine && regForm.$submitted),regsuccess:regForm.regPassword.$dirty && regForm.regPassword.$valid}">
           <span class="input-label">Password</span>
@@ -37,7 +36,7 @@
     </div>
 
     <div class="row padding-top padding-horizontal">
-      <button class="button button-block button-positive"><i class="icon ion-social-google-outline"></i> Sign up with Google
+      <button class="button button-block button-positive"><i class="fa fa-google fa-lg" aria-hidden="true"></i> Sign up with Google
       </button>
     </div>
 
