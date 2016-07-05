@@ -10,5 +10,9 @@
     {
         "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalafUI\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxhdpi-v4\\screen.png",
         "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalafUI\\platforms\\android\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxhdpi-v4\\screen.png",
+        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\drawable-port-xxhdpi\\screen.png"
     }
 ]

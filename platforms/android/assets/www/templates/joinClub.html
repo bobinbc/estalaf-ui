@@ -1,0 +1,27 @@
+<ion-view>
+  <div class="bar bar-header bar-dark">
+    <h1 class="title">Join Club</h1>
+  </div>
+  <form name="joinClubForm" ng-submit="joinClubForm.$valid &&joinClub()" novalidate>
+    <div class="row responsive-md join">
+      <label class="item item-input" ng-class='{fail:(joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$invalid ||(joinClubForm.clubCode.$pristine && joinClubForm.$submitted)),success:joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$valid}'>
+        <span class="input-label">Club Code</span>
+        <input type="text" name="clubCode" ng-model="clubCode" required>
+        <i class="fa fa-times-circle fa-lg padding-horizontal" aria-hidden="true" ng-show="joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$invalid ||(joinClubForm.clubCode.$pristine && joinClubForm.$submitted)" id="joinPass"></i><i class="fa fa-check-circle padding-horizontal fa-lg"
+            aria-hidden="true" ng-show="joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$valid" id="joinFail"></i>
+      </label>
+    </div>
+    <div class="row responsive-md padding">
+      <button class="button button-block button-positive"> <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Join Club</button>
+    </div>
+  </form>
+  <div class="row">
+    <div class="col col-offset-20">
+      <p>Do you want to create the club?</P>
+    </div>
+  </div>
+  <div class="row responsive-md padding">
+    <button class="button button-block button-positive" ng-click="join()"> <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Create Club</button>
+  </div>
+
+</ion-view>

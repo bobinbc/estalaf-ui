@@ -1,0 +1,24 @@
+<ion-view>
+  <div class="bar bar-header bar-dark">
+    <h1 class="title">Add Resource</h1>
+  </div>
+  <form name="addResourceForm" ng-submit="addResource()">
+    <div class="card">
+      <div>
+        <div class="list list-inset">
+          <label class="item item-input">
+            <input type="text" placeholder="Resource Name" ng-model="resourceName" required>
+          </label>
+        </div>
+        <div class="padding">
+          <textarea placeholder="Description" rows="10" class="col responsive-lg" ng-model="resourceDescription" required>
+          </textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="padding">
+      <button class="button button-block button-positive"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Add</button>
+    </div>
+  </form>
+</ion-view>

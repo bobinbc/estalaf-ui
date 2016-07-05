@@ -1,4 +1,4 @@
-angular.module('estalaf', ['ionic','estalaf.controllers'])
+angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -23,12 +23,17 @@ angular.module('estalaf', ['ionic','estalaf.controllers'])
   .state('register', {
       url: '/register',
       templateUrl: 'templates/register.html',
-      controller:'RegisterCtrl'
+            controller:'RegisterCtrl'
     })
     .state('login', {
       url: '/login',
       templateUrl: 'templates/login.html',
       controller:'LoginCtrl'
+    })
+    .state('joinClub',{
+      url:'/joinClub',
+      templateUrl:'templates/joinClub.html',
+      controller:'JoinCtrl'
     })
     .state('create',{
       url:'/create',
@@ -38,6 +43,12 @@ angular.module('estalaf', ['ionic','estalaf.controllers'])
     .state('home',{
       url:'/home',
       templateUrl:'templates/home.html',
+      controller:'HomeCtrl'
+    })
+    .state('addResource',{
+      url:'/addResource',
+      templateUrl:'templates/addResource.html',
+      controller:'AddResCtrl'
     });
   $urlRouterProvider.otherwise('/register');
 });

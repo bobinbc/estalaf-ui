@@ -64,8 +64,8 @@
 /*This is for success validation*/
 
 .success {
-  border-color: #5cb85c;
-  border-width: 2px;
+  border-left-color: #5cb85c;
+  border-left-width: 4px;
 }
 #userSuccess {
   color: #5cb85c;
@@ -77,8 +77,8 @@
 /*This is for failure validation*/
 
 .fail {
-  border-color: #d9534f;
-  border-width: 2px;
+  border-left-color: #d9534f;
+  border-left-width: 4px;
 }
 #userFail {
   color: #d9534f;
@@ -92,19 +92,59 @@
 
 /*end of login template*/
 
-/*.card{
-  margin-top:100px;
-}*/
-.card{
-  background-color:#cfcfcf;
-  margin-top:100px;
+.card {
+  background-color: #cfcfcf;
+  margin-top: 100px;
 }
-
-.button::after{
+.button::after {
   font-weight: 900;
   font-size: larger;
 }
-.ion-ios-compose::before{
+.ion-ios-compose::before {
   font-weight: bold;
   font-size: larger;
 }
+
+/*Join club template*/
+
+.row.responsive-md.join {
+  padding: 50% 10% 10% 10%;
+}
+#joinPass {
+  color: #d9534f;
+}
+#joinFail {
+  color: #5cb85c;
+}
+
+/*end*/
+
+
+/*Home page*/
+
+
+/*icon style*/
+
+.menu-blob {
+  border-radius: 100px;
+  background-color: #EBC50D;
+  box-shadow: 3px 3px 3px #888888;
+}
+.blue-btn {
+  color: #007BC0;
+  font-size: 2em;
+}
+.row.scanButton {
+  padding: 20% 30% 33% 20%;
+}
+
+/*end of icon style*/
+
+
+/**/
+
+.p {
+  margin-top: 30%;
+}
+
+/*end of home page*/

@@ -1,3 +1,66 @@
-<ion-view>
-<p>Hi</p>
-</ion-view>
+<ion-side-menus>
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent">
+      <div class="bar bar-header bar-dark">
+        <h1 class="title"><i class="fa fa-home fa-lg" aria-hidden="true" style="color:white;"></i> Home</h1>
+      </div>
+      <div class="p">
+        <div class="range range-positive">
+          <!-- <i class="icon ion-ios-sunny-outline"></i> -->
+          <p>Add Resources</p>
+          <input type="range" name="volume" min="0" max="100" value="33">
+          <!-- <i class="icon ion-ios-sunny"></i> -->
+          <p>Borrow resources</p>
+        </div>
+      </div>
+      <div class="row scanButton">
+        <div class="col col-50 col-offset-20">
+          <span class="fa-stack fa-5x fa menu-blob">
+          <i class="fa fa-circle fa-stack-1x blue-btn"></i>
+          <i class="fa fa-barcode  fa-stack-1x" aria-hidden="true" style='color:white' ng-click="scanBarcode()"></i>
+        </span>
+        </div>
+      </div>
+      <div class="row responsive-md padding">
+        <button class="button button-block button-positive" ng-click="addResource()"> <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Add Resources</button>
+      </div>
+    </ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-positive">
+      <h1 class="title">Home</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close>
+          <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i> Edit Profile
+        </ion-item>
+        <ion-item menu-close href="">
+          <i class="fa fa-bell fa-lg" aria-hidden="true"></i> Notification
+        </ion-item>
+        <ion-item menu-close href="">
+          <i class="fa fa-search fa-lg" aria-hidden="true"></i> Search
+        </ion-item>
+        <ion-item menu-close ng-click="join()">
+          <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Join Club
+        </ion-item>
+        <ion-item menu-close ng-click="create()">
+          <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Create Club
+        </ion-item>
+        <ion-item menu-close href="">
+          <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Club Approval
+        </ion-item>
+        <ion-item menu-close ng-click="logout()">
+          <i class="fa fa-power-off fa-lg" aria-hidden="true"></i> Sign out
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
