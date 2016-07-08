@@ -14,5 +14,9 @@
     {
         "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
         "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\res\\drawable-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\launcher_icon.png",
+        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\drawable-xxhdpi\\launcher_icon.png"
     }
 ]

@@ -99,14 +99,14 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
   })
   .controller('HomeCtrl', function($scope, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $ionicPopup, $localStorage, $window, $ionicHistory) {
 
-    // $scope.scanBarcode = function() {
-    //   $cordovaBarcodeScanner.scan().then(function(imageData) {
-    //     alert(imageData.text);
-    //     console.log("format" + imageData.format);
-    //   }, function(error) {
-    //     console.log("An Error: " + error);
-    //   });
-    // };
+     $scope.scanBarcode = function() {
+       $cordovaBarcodeScanner.scan().then(function(imageData) {
+         alert(imageData.text);
+         console.log("format" + imageData.format);
+       }, function(error) {
+         console.log("An Error: " + error);
+       });
+     };
     $scope.toggleLeft = function() {
       $ionicSideMenuDelegate.toggleLeft();
     };

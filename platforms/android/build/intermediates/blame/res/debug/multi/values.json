@@ -69,606 +69,19 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 63,
-                    "endOffset": 114
+                    "endLine": 33,
+                    "endColumn": 17,
+                    "endOffset": 707
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 159,
-                        "endColumn": 63,
-                        "endOffset": 218
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 119,
-                    "endColumn": 44,
-                    "endOffset": 159
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\arrays.xml",
                     "position": {
                         "startLine": 2,
-                        "startColumn": 4,
+                        "startColumn": 2,
                         "startOffset": 55,
-                        "endColumn": 44,
-                        "endOffset": 95
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 164,
-                    "endColumn": 56,
-                    "endOffset": 216
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 223,
-                        "endColumn": 56,
-                        "endOffset": 275
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 221,
-                    "endColumn": 58,
-                    "endOffset": 275
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 58,
-                        "endOffset": 334
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 280,
-                    "endColumn": 63,
-                    "endOffset": 339
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 339,
-                        "endColumn": 63,
-                        "endOffset": 398
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 344,
-                    "endColumn": 58,
-                    "endOffset": 398
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 403,
-                        "endColumn": 58,
-                        "endOffset": 457
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 403,
-                    "endColumn": 44,
-                    "endOffset": 443
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 462,
-                        "endColumn": 44,
-                        "endOffset": 502
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 448,
-                    "endColumn": 58,
-                    "endOffset": 502
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 507,
-                        "endColumn": 58,
-                        "endOffset": 561
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 507,
-                    "endColumn": 48,
-                    "endOffset": 551
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 566,
-                        "endColumn": 48,
-                        "endOffset": 610
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 556,
-                    "endColumn": 70,
-                    "endOffset": 622
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 615,
-                        "endColumn": 70,
-                        "endOffset": 681
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 627,
-                    "endColumn": 51,
-                    "endOffset": 674
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 686,
-                        "endColumn": 51,
-                        "endOffset": 733
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 679,
-                    "endColumn": 44,
-                    "endOffset": 719
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 738,
-                        "endColumn": 44,
-                        "endOffset": 778
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 724,
-                    "endColumn": 51,
-                    "endOffset": 771
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 783,
-                        "endColumn": 51,
-                        "endOffset": 830
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 776,
-                    "endColumn": 64,
-                    "endOffset": 836
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 835,
-                        "endColumn": 64,
-                        "endOffset": 895
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 841,
-                    "endColumn": 57,
-                    "endOffset": 894
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 900,
-                        "endColumn": 57,
-                        "endOffset": 953
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 899,
-                    "endColumn": 47,
-                    "endOffset": 942
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 958,
-                        "endColumn": 47,
-                        "endOffset": 1001
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 947,
-                    "endColumn": 40,
-                    "endOffset": 983
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1006,
-                        "endColumn": 40,
-                        "endOffset": 1042
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 988,
-                    "endColumn": 60,
-                    "endOffset": 1044
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1047,
-                        "endColumn": 60,
-                        "endOffset": 1103
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 1049,
-                    "endColumn": 64,
-                    "endOffset": 1109
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1108,
-                        "endColumn": 64,
-                        "endOffset": 1168
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 1114,
-                    "endColumn": 71,
-                    "endOffset": 1181
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 1173,
-                        "endColumn": 71,
-                        "endOffset": 1240
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 1186,
-                    "endColumn": 56,
-                    "endOffset": 1238
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 1245,
-                        "endColumn": 56,
-                        "endOffset": 1297
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 1243,
-                    "endColumn": 58,
-                    "endOffset": 1297
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 1302,
-                        "endColumn": 58,
-                        "endOffset": 1356
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 1302,
-                    "endColumn": 65,
-                    "endOffset": 1363
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 1361,
-                        "endColumn": 65,
-                        "endOffset": 1422
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 1368,
-                    "endColumn": 61,
-                    "endOffset": 1425
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 1427,
-                        "endColumn": 61,
-                        "endOffset": 1484
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 1430,
-                    "endColumn": 60,
-                    "endOffset": 1486
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 1489,
-                        "endColumn": 60,
-                        "endOffset": 1545
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 1491,
-                    "endColumn": 56,
-                    "endOffset": 1543
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 1550,
-                        "endColumn": 56,
-                        "endOffset": 1602
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 1548,
-                    "endColumn": 52,
-                    "endOffset": 1596
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 1607,
-                        "endColumn": 52,
-                        "endOffset": 1655
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 1601,
-                    "endColumn": 47,
-                    "endOffset": 1644
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 1660,
-                        "endColumn": 47,
-                        "endOffset": 1703
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 1649,
-                    "endColumn": 56,
-                    "endOffset": 1701
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 1708,
-                        "endColumn": 56,
-                        "endOffset": 1760
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 1706,
-                    "endColumn": 58,
-                    "endOffset": 1760
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 1765,
-                        "endColumn": 58,
-                        "endOffset": 1819
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 1765,
-                    "endColumn": 57,
-                    "endOffset": 1818
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 33,
-                        "startColumn": 4,
-                        "startOffset": 1824,
-                        "endColumn": 57,
-                        "endOffset": 1877
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 1823,
-                    "endColumn": 56,
-                    "endOffset": 1875
-                },
-                "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 34,
-                        "startColumn": 4,
-                        "startOffset": 1882,
-                        "endColumn": 56,
-                        "endOffset": 1934
+                        "endLine": 33,
+                        "endColumn": 17,
+                        "endOffset": 738
                     }
                 }
             },
@@ -676,18 +89,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1880,
-                    "endColumn": 68,
-                    "endOffset": 1944
+                    "startOffset": 712,
+                    "endColumn": 49,
+                    "endOffset": 757
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 35,
-                        "startColumn": 4,
-                        "startOffset": 1939,
-                        "endColumn": 68,
-                        "endOffset": 2003
+                        "startLine": 17,
+                        "startColumn": 2,
+                        "startOffset": 649,
+                        "endColumn": 47,
+                        "endOffset": 694
                     }
                 }
             },
@@ -695,18 +108,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1949,
-                    "endColumn": 55,
-                    "endOffset": 2000
+                    "startOffset": 762,
+                    "endColumn": 47,
+                    "endOffset": 805
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 2008,
-                        "endColumn": 55,
-                        "endOffset": 2059
+                        "startLine": 18,
+                        "startColumn": 2,
+                        "startOffset": 698,
+                        "endColumn": 45,
+                        "endOffset": 741
                     }
                 }
             },
@@ -714,18 +127,18 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 2005,
-                    "endColumn": 52,
-                    "endOffset": 2053
+                    "startOffset": 810,
+                    "endColumn": 58,
+                    "endOffset": 864
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 2064,
-                        "endColumn": 52,
-                        "endOffset": 2112
+                        "startLine": 19,
+                        "startColumn": 2,
+                        "startOffset": 745,
+                        "endColumn": 56,
+                        "endOffset": 799
                     }
                 }
             },
@@ -733,18 +146,18 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 2058,
-                    "endColumn": 52,
-                    "endOffset": 2106
+                    "startOffset": 869,
+                    "endColumn": 53,
+                    "endOffset": 918
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 38,
-                        "startColumn": 4,
-                        "startOffset": 2117,
-                        "endColumn": 52,
-                        "endOffset": 2165
+                        "startLine": 20,
+                        "startColumn": 2,
+                        "startOffset": 839,
+                        "endColumn": 51,
+                        "endOffset": 888
                     }
                 }
             },
@@ -752,18 +165,18 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2111,
-                    "endColumn": 64,
-                    "endOffset": 2171
+                    "startOffset": 923,
+                    "endColumn": 49,
+                    "endOffset": 968
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 40,
-                        "startColumn": 4,
-                        "startOffset": 2231,
-                        "endColumn": 64,
-                        "endOffset": 2291
+                        "startLine": 21,
+                        "startColumn": 2,
+                        "startOffset": 892,
+                        "endColumn": 47,
+                        "endOffset": 937
                     }
                 }
             },
@@ -771,18 +184,18 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2176,
-                    "endColumn": 60,
-                    "endOffset": 2232
+                    "startOffset": 973,
+                    "endColumn": 47,
+                    "endOffset": 1016
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 2170,
-                        "endColumn": 60,
-                        "endOffset": 2226
+                        "startLine": 22,
+                        "startColumn": 2,
+                        "startOffset": 977,
+                        "endColumn": 45,
+                        "endOffset": 1020
                     }
                 }
             },
@@ -790,18 +203,18 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2237,
-                    "endColumn": 71,
-                    "endOffset": 2304
+                    "startOffset": 1021,
+                    "endColumn": 47,
+                    "endOffset": 1064
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 41,
-                        "startColumn": 4,
-                        "startOffset": 2296,
-                        "endColumn": 71,
-                        "endOffset": 2363
+                        "startLine": 23,
+                        "startColumn": 2,
+                        "startOffset": 1024,
+                        "endColumn": 45,
+                        "endOffset": 1067
                     }
                 }
             },
@@ -809,18 +222,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2309,
+                    "startOffset": 1069,
                     "endColumn": 47,
-                    "endOffset": 2352
+                    "endOffset": 1112
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 42,
-                        "startColumn": 4,
-                        "startOffset": 2368,
-                        "endColumn": 47,
-                        "endOffset": 2411
+                        "startLine": 24,
+                        "startColumn": 2,
+                        "startOffset": 1071,
+                        "endColumn": 45,
+                        "endOffset": 1114
                     }
                 }
             },
@@ -828,18 +241,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2357,
-                    "endColumn": 84,
-                    "endOffset": 2437
+                    "startOffset": 1117,
+                    "endColumn": 47,
+                    "endOffset": 1160
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 43,
-                        "startColumn": 4,
-                        "startOffset": 2416,
-                        "endColumn": 84,
-                        "endOffset": 2496
+                        "startLine": 25,
+                        "startColumn": 2,
+                        "startOffset": 1118,
+                        "endColumn": 45,
+                        "endOffset": 1161
                     }
                 }
             },
@@ -847,18 +260,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2442,
-                    "endColumn": 53,
-                    "endOffset": 2491
+                    "startOffset": 1165,
+                    "endColumn": 52,
+                    "endOffset": 1213
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 44,
-                        "startColumn": 4,
-                        "startOffset": 2501,
-                        "endColumn": 53,
-                        "endOffset": 2550
+                        "startLine": 26,
+                        "startColumn": 2,
+                        "startOffset": 1165,
+                        "endColumn": 50,
+                        "endOffset": 1213
                     }
                 }
             },
@@ -866,18 +279,18 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 2496,
-                    "endColumn": 49,
-                    "endOffset": 2541
+                    "startOffset": 1218,
+                    "endColumn": 51,
+                    "endOffset": 1265
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 45,
-                        "startColumn": 4,
-                        "startOffset": 2555,
+                        "startLine": 27,
+                        "startColumn": 2,
+                        "startOffset": 1253,
                         "endColumn": 49,
-                        "endOffset": 2600
+                        "endOffset": 1300
                     }
                 }
             },
@@ -885,18 +298,18 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 2546,
-                    "endColumn": 58,
-                    "endOffset": 2600
+                    "startOffset": 1270,
+                    "endColumn": 43,
+                    "endOffset": 1309
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\dimens.xml",
                     "position": {
                         "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 100,
-                        "endColumn": 58,
-                        "endOffset": 154
+                        "startColumn": 2,
+                        "startOffset": 102,
+                        "endColumn": 41,
+                        "endOffset": 141
                     }
                 }
             },
@@ -904,18 +317,18 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 2605,
-                    "endColumn": 57,
-                    "endOffset": 2658
+                    "startOffset": 1314,
+                    "endColumn": 47,
+                    "endOffset": 1357
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\dimens.xml",
                     "position": {
-                        "startLine": 46,
-                        "startColumn": 4,
-                        "startOffset": 2605,
-                        "endColumn": 57,
-                        "endOffset": 2658
+                        "startLine": 2,
+                        "startColumn": 2,
+                        "startOffset": 55,
+                        "endColumn": 45,
+                        "endOffset": 98
                     }
                 }
             },
@@ -923,18 +336,18 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 2663,
-                    "endColumn": 55,
-                    "endOffset": 2714
+                    "startOffset": 1362,
+                    "endColumn": 35,
+                    "endOffset": 1393
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\ids.xml",
                     "position": {
-                        "startLine": 47,
-                        "startColumn": 4,
-                        "startOffset": 2663,
-                        "endColumn": 55,
-                        "endOffset": 2714
+                        "startLine": 17,
+                        "startColumn": 2,
+                        "startOffset": 649,
+                        "endColumn": 33,
+                        "endOffset": 680
                     }
                 }
             },
@@ -942,18 +355,18 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 2719,
+                    "startOffset": 1398,
                     "endColumn": 42,
-                    "endOffset": 2757
+                    "endOffset": 1436
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\ids.xml",
                     "position": {
-                        "startLine": 48,
-                        "startColumn": 4,
-                        "startOffset": 2719,
-                        "endColumn": 42,
-                        "endOffset": 2757
+                        "startLine": 18,
+                        "startColumn": 2,
+                        "startOffset": 684,
+                        "endColumn": 40,
+                        "endOffset": 722
                     }
                 }
             },
@@ -961,18 +374,18 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2762,
-                    "endColumn": 48,
-                    "endOffset": 2806
+                    "startOffset": 1441,
+                    "endColumn": 45,
+                    "endOffset": 1482
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\ids.xml",
                     "position": {
-                        "startLine": 49,
-                        "startColumn": 4,
-                        "startOffset": 2762,
-                        "endColumn": 48,
-                        "endOffset": 2806
+                        "startLine": 19,
+                        "startColumn": 2,
+                        "startOffset": 726,
+                        "endColumn": 43,
+                        "endOffset": 767
                     }
                 }
             },
@@ -980,18 +393,18 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 2811,
-                    "endColumn": 44,
-                    "endOffset": 2851
+                    "startOffset": 1487,
+                    "endColumn": 49,
+                    "endOffset": 1532
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\ids.xml",
                     "position": {
-                        "startLine": 50,
-                        "startColumn": 4,
-                        "startOffset": 2811,
-                        "endColumn": 44,
-                        "endOffset": 2851
+                        "startLine": 20,
+                        "startColumn": 2,
+                        "startOffset": 771,
+                        "endColumn": 47,
+                        "endOffset": 816
                     }
                 }
             },
@@ -999,18 +412,18 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2856,
-                    "endColumn": 86,
-                    "endOffset": 2938
+                    "startOffset": 1537,
+                    "endColumn": 33,
+                    "endOffset": 1566
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\ids.xml",
                     "position": {
-                        "startLine": 51,
-                        "startColumn": 4,
-                        "startOffset": 2856,
-                        "endColumn": 86,
-                        "endOffset": 2938
+                        "startLine": 21,
+                        "startColumn": 2,
+                        "startOffset": 820,
+                        "endColumn": 31,
+                        "endOffset": 849
                     }
                 }
             },
@@ -1018,18 +431,18 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2943,
-                    "endColumn": 137,
-                    "endOffset": 3076
+                    "startOffset": 1571,
+                    "endColumn": 44,
+                    "endOffset": 1611
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\ids.xml",
                     "position": {
-                        "startLine": 52,
-                        "startColumn": 4,
-                        "startOffset": 2943,
-                        "endColumn": 137,
-                        "endOffset": 3076
+                        "startLine": 22,
+                        "startColumn": 2,
+                        "startOffset": 853,
+                        "endColumn": 42,
+                        "endOffset": 893
                     }
                 }
             },
@@ -1037,18 +450,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 3081,
-                    "endColumn": 53,
-                    "endOffset": 3130
+                    "startOffset": 1616,
+                    "endColumn": 47,
+                    "endOffset": 1659
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\ids.xml",
                     "position": {
-                        "startLine": 53,
-                        "startColumn": 4,
-                        "startOffset": 3081,
-                        "endColumn": 53,
-                        "endOffset": 3130
+                        "startLine": 23,
+                        "startColumn": 2,
+                        "startOffset": 897,
+                        "endColumn": 45,
+                        "endOffset": 940
                     }
                 }
             },
@@ -1056,1330 +469,1464 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 3135,
-                    "endColumn": 53,
-                    "endOffset": 3184
+                    "startOffset": 1664,
+                    "endColumn": 63,
+                    "endOffset": 1723
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 54,
-                        "startColumn": 4,
-                        "startOffset": 3135,
-                        "endColumn": 53,
-                        "endOffset": 3184
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 3189,
-                    "endColumn": 54,
-                    "endOffset": 3239
+                    "startOffset": 1728,
+                    "endColumn": 44,
+                    "endOffset": 1768
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 55,
-                        "startColumn": 4,
-                        "startOffset": 3189,
-                        "endColumn": 54,
-                        "endOffset": 3239
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 3244,
-                    "endColumn": 106,
-                    "endOffset": 3346
+                    "startOffset": 1773,
+                    "endColumn": 56,
+                    "endOffset": 1825
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 56,
-                        "startColumn": 4,
-                        "startOffset": 3244,
-                        "endColumn": 106,
-                        "endOffset": 3346
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 3351,
-                    "endColumn": 49,
-                    "endOffset": 3396
+                    "startOffset": 1830,
+                    "endColumn": 58,
+                    "endOffset": 1884
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 57,
-                        "startColumn": 4,
-                        "startOffset": 3351,
-                        "endColumn": 49,
-                        "endOffset": 3396
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 3401,
-                    "endColumn": 49,
-                    "endOffset": 3446
+                    "startOffset": 1889,
+                    "endColumn": 63,
+                    "endOffset": 1948
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 58,
-                        "startColumn": 4,
-                        "startOffset": 3401,
-                        "endColumn": 49,
-                        "endOffset": 3446
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 3451,
-                    "endColumn": 105,
-                    "endOffset": 3552
+                    "startOffset": 1953,
+                    "endColumn": 58,
+                    "endOffset": 2007
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 59,
-                        "startColumn": 4,
-                        "startOffset": 3451,
-                        "endColumn": 105,
-                        "endOffset": 3552
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 3557,
-                    "endColumn": 57,
-                    "endOffset": 3610
+                    "startOffset": 2012,
+                    "endColumn": 44,
+                    "endOffset": 2052
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 60,
-                        "startColumn": 4,
-                        "startOffset": 3557,
-                        "endColumn": 57,
-                        "endOffset": 3610
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 3615,
-                    "endColumn": 68,
-                    "endOffset": 3679
+                    "startOffset": 2057,
+                    "endColumn": 58,
+                    "endOffset": 2111
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 61,
-                        "startColumn": 4,
-                        "startOffset": 3615,
-                        "endColumn": 68,
-                        "endOffset": 3679
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 3684,
-                    "endColumn": 86,
-                    "endOffset": 3766
+                    "startOffset": 2116,
+                    "endColumn": 48,
+                    "endOffset": 2160
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 62,
-                        "startColumn": 4,
-                        "startOffset": 3684,
-                        "endColumn": 86,
-                        "endOffset": 3766
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 3771,
-                    "endColumn": 197,
-                    "endOffset": 3964
+                    "startOffset": 2165,
+                    "endColumn": 70,
+                    "endOffset": 2231
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 3771,
-                        "endColumn": 197,
-                        "endOffset": 3964
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 3969,
-                    "endColumn": 138,
-                    "endOffset": 4103
+                    "startOffset": 2236,
+                    "endColumn": 51,
+                    "endOffset": 2283
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 64,
-                        "startColumn": 4,
-                        "startOffset": 3969,
-                        "endColumn": 138,
-                        "endOffset": 4103
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 4108,
-                    "endColumn": 49,
-                    "endOffset": 4153
+                    "startOffset": 2288,
+                    "endColumn": 44,
+                    "endOffset": 2328
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 65,
-                        "startColumn": 4,
-                        "startOffset": 4108,
-                        "endColumn": 49,
-                        "endOffset": 4153
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 4158,
-                    "endColumn": 91,
-                    "endOffset": 4245
+                    "startOffset": 2333,
+                    "endColumn": 51,
+                    "endOffset": 2380
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 66,
-                        "startColumn": 4,
-                        "startOffset": 4158,
-                        "endColumn": 91,
-                        "endOffset": 4245
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 4250,
-                    "endColumn": 83,
-                    "endOffset": 4329
+                    "startOffset": 2385,
+                    "endColumn": 64,
+                    "endOffset": 2445
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 67,
-                        "startColumn": 4,
-                        "startOffset": 4250,
-                        "endColumn": 83,
-                        "endOffset": 4329
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 4334,
-                    "endColumn": 69,
-                    "endOffset": 4399
+                    "startOffset": 2450,
+                    "endColumn": 57,
+                    "endOffset": 2503
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 68,
-                        "startColumn": 4,
-                        "startOffset": 4334,
-                        "endColumn": 69,
-                        "endOffset": 4399
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 4404,
-                    "endColumn": 45,
-                    "endOffset": 4445
+                    "startOffset": 2508,
+                    "endColumn": 47,
+                    "endOffset": 2551
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 69,
-                        "startColumn": 4,
-                        "startOffset": 4404,
-                        "endColumn": 45,
-                        "endOffset": 4445
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 4450,
-                    "endColumn": 51,
-                    "endOffset": 4497
+                    "startOffset": 2556,
+                    "endColumn": 40,
+                    "endOffset": 2592
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 70,
-                        "startColumn": 4,
-                        "startOffset": 4450,
-                        "endColumn": 51,
-                        "endOffset": 4497
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 4502,
-                    "endColumn": 71,
-                    "endOffset": 4569
+                    "startOffset": 2597,
+                    "endColumn": 60,
+                    "endOffset": 2653
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 71,
-                        "startColumn": 4,
-                        "startOffset": 4502,
-                        "endColumn": 71,
-                        "endOffset": 4569
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 4574,
-                    "endColumn": 77,
-                    "endOffset": 4647
+                    "startOffset": 2658,
+                    "endColumn": 64,
+                    "endOffset": 2718
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 72,
-                        "startColumn": 4,
-                        "startOffset": 4574,
-                        "endColumn": 77,
-                        "endOffset": 4647
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 4652,
-                    "endColumn": 61,
-                    "endOffset": 4709
+                    "startOffset": 2723,
+                    "endColumn": 71,
+                    "endOffset": 2790
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 73,
-                        "startColumn": 4,
-                        "startOffset": 4652,
-                        "endColumn": 61,
-                        "endOffset": 4709
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 4714,
-                    "endColumn": 143,
-                    "endOffset": 4853
+                    "startOffset": 2795,
+                    "endColumn": 56,
+                    "endOffset": 2847
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 74,
-                        "startColumn": 4,
-                        "startOffset": 4714,
-                        "endColumn": 143,
-                        "endOffset": 4853
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 4858,
-                    "endColumn": 95,
-                    "endOffset": 4949
+                    "startOffset": 2852,
+                    "endColumn": 58,
+                    "endOffset": 2906
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 75,
-                        "startColumn": 4,
-                        "startOffset": 4858,
-                        "endColumn": 95,
-                        "endOffset": 4949
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 4954,
-                    "endColumn": 76,
-                    "endOffset": 5026
+                    "startOffset": 2911,
+                    "endColumn": 65,
+                    "endOffset": 2972
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 76,
-                        "startColumn": 4,
-                        "startOffset": 4954,
-                        "endColumn": 76,
-                        "endOffset": 5026
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 5031,
-                    "endColumn": 50,
-                    "endOffset": 5077
+                    "startOffset": 2977,
+                    "endColumn": 61,
+                    "endOffset": 3034
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 77,
-                        "startColumn": 4,
-                        "startOffset": 5031,
-                        "endColumn": 50,
-                        "endOffset": 5077
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 5082,
-                    "endColumn": 81,
-                    "endOffset": 5159
+                    "startOffset": 3039,
+                    "endColumn": 60,
+                    "endOffset": 3095
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 78,
-                        "startColumn": 4,
-                        "startOffset": 5082,
-                        "endColumn": 81,
-                        "endOffset": 5159
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 5164,
-                    "endColumn": 83,
-                    "endOffset": 5243
+                    "startOffset": 3100,
+                    "endColumn": 56,
+                    "endOffset": 3152
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 79,
-                        "startColumn": 4,
-                        "startOffset": 5164,
-                        "endColumn": 83,
-                        "endOffset": 5243
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 5248,
-                    "endColumn": 71,
-                    "endOffset": 5315
+                    "startOffset": 3157,
+                    "endColumn": 52,
+                    "endOffset": 3205
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 80,
-                        "startColumn": 4,
-                        "startOffset": 5248,
-                        "endColumn": 71,
-                        "endOffset": 5315
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 5320,
-                    "endColumn": 98,
-                    "endOffset": 5414
+                    "startOffset": 3210,
+                    "endColumn": 47,
+                    "endOffset": 3253
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 81,
-                        "startColumn": 4,
-                        "startOffset": 5320,
-                        "endColumn": 98,
-                        "endOffset": 5414
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 5419,
-                    "endColumn": 70,
-                    "endOffset": 5485
+                    "startOffset": 3258,
+                    "endColumn": 56,
+                    "endOffset": 3310
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 82,
-                        "startColumn": 4,
-                        "startOffset": 5419,
-                        "endColumn": 70,
-                        "endOffset": 5485
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 5490,
-                    "endColumn": 81,
-                    "endOffset": 5567
+                    "startOffset": 3315,
+                    "endColumn": 58,
+                    "endOffset": 3369
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 83,
-                        "startColumn": 4,
-                        "startOffset": 5490,
-                        "endColumn": 81,
-                        "endOffset": 5567
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 5572,
-                    "endColumn": 140,
-                    "endOffset": 5708
+                    "startOffset": 3374,
+                    "endColumn": 57,
+                    "endOffset": 3427
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 84,
-                        "startColumn": 4,
-                        "startOffset": 5572,
-                        "endColumn": 140,
-                        "endOffset": 5708
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 5713,
-                    "endColumn": 85,
-                    "endOffset": 5794
+                    "startOffset": 3432,
+                    "endColumn": 56,
+                    "endOffset": 3484
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 85,
-                        "startColumn": 4,
-                        "startOffset": 5713,
-                        "endColumn": 85,
-                        "endOffset": 5794
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 5799,
-                    "endColumn": 67,
-                    "endOffset": 5862
+                    "startOffset": 3489,
+                    "endColumn": 68,
+                    "endOffset": 3553
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 86,
-                        "startColumn": 4,
-                        "startOffset": 5799,
-                        "endColumn": 67,
-                        "endOffset": 5862
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 5867,
-                    "endColumn": 76,
-                    "endOffset": 5939
+                    "startOffset": 3558,
+                    "endColumn": 55,
+                    "endOffset": 3609
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 87,
-                        "startColumn": 4,
-                        "startOffset": 5867,
-                        "endColumn": 76,
-                        "endOffset": 5939
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 5944,
-                    "endColumn": 64,
-                    "endOffset": 6004
+                    "startOffset": 3614,
+                    "endColumn": 52,
+                    "endOffset": 3662
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 88,
-                        "startColumn": 4,
-                        "startOffset": 5944,
-                        "endColumn": 64,
-                        "endOffset": 6004
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 6009,
-                    "endColumn": 91,
-                    "endOffset": 6096
+                    "startOffset": 3667,
+                    "endColumn": 52,
+                    "endOffset": 3715
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 89,
-                        "startColumn": 4,
-                        "startOffset": 6009,
-                        "endColumn": 91,
-                        "endOffset": 6096
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 6101,
-                    "endColumn": 101,
-                    "endOffset": 6198
+                    "startOffset": 3720,
+                    "endColumn": 64,
+                    "endOffset": 3780
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 90,
-                        "startColumn": 4,
-                        "startOffset": 6101,
-                        "endColumn": 101,
-                        "endOffset": 6198
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 6203,
-                    "endColumn": 90,
-                    "endOffset": 6289
+                    "startOffset": 3785,
+                    "endColumn": 60,
+                    "endOffset": 3841
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 91,
-                        "startColumn": 4,
-                        "startOffset": 6203,
-                        "endColumn": 90,
-                        "endOffset": 6289
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 6294,
-                    "endColumn": 74,
-                    "endOffset": 6364
+                    "startOffset": 3846,
+                    "endColumn": 71,
+                    "endOffset": 3913
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 92,
-                        "startColumn": 4,
-                        "startOffset": 6294,
-                        "endColumn": 74,
-                        "endOffset": 6364
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 6369,
-                    "endColumn": 156,
-                    "endOffset": 6521
+                    "startOffset": 3918,
+                    "endColumn": 47,
+                    "endOffset": 3961
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 93,
-                        "startColumn": 4,
-                        "startOffset": 6369,
-                        "endColumn": 156,
-                        "endOffset": 6521
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 6526,
-                    "endColumn": 73,
-                    "endOffset": 6595
+                    "startOffset": 3966,
+                    "endColumn": 84,
+                    "endOffset": 4046
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 94,
-                        "startColumn": 4,
-                        "startOffset": 6526,
-                        "endColumn": 73,
-                        "endOffset": 6595
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 6600,
-                    "endColumn": 70,
-                    "endOffset": 6666
+                    "startOffset": 4051,
+                    "endColumn": 53,
+                    "endOffset": 4100
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 95,
-                        "startColumn": 4,
-                        "startOffset": 6600,
-                        "endColumn": 70,
-                        "endOffset": 6666
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 6671,
-                    "endColumn": 53,
-                    "endOffset": 6720
+                    "startOffset": 4105,
+                    "endColumn": 49,
+                    "endOffset": 4150
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 96,
-                        "startColumn": 4,
-                        "startOffset": 6671,
-                        "endColumn": 53,
-                        "endOffset": 6720
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 6725,
-                    "endColumn": 60,
-                    "endOffset": 6781
+                    "startOffset": 4155,
+                    "endColumn": 58,
+                    "endOffset": 4209
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 97,
-                        "startColumn": 4,
-                        "startOffset": 6725,
-                        "endColumn": 60,
-                        "endOffset": 6781
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 6786,
-                    "endColumn": 119,
-                    "endOffset": 6901
+                    "startOffset": 4214,
+                    "endColumn": 57,
+                    "endOffset": 4267
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 98,
-                        "startColumn": 4,
-                        "startOffset": 6786,
-                        "endColumn": 119,
-                        "endOffset": 6901
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 6906,
-                    "endColumn": 85,
-                    "endOffset": 6987
+                    "startOffset": 4272,
+                    "endColumn": 55,
+                    "endOffset": 4323
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 99,
-                        "startColumn": 4,
-                        "startOffset": 6906,
-                        "endColumn": 85,
-                        "endOffset": 6987
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 6992,
-                    "endColumn": 68,
-                    "endOffset": 7056
+                    "startOffset": 4328,
+                    "endColumn": 42,
+                    "endOffset": 4366
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 100,
-                        "startColumn": 4,
-                        "startOffset": 6992,
-                        "endColumn": 68,
-                        "endOffset": 7056
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 7061,
-                    "endColumn": 95,
-                    "endOffset": 7152
+                    "startOffset": 4371,
+                    "endColumn": 48,
+                    "endOffset": 4415
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 101,
-                        "startColumn": 4,
-                        "startOffset": 7061,
-                        "endColumn": 95,
-                        "endOffset": 7152
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 7157,
-                    "endColumn": 69,
-                    "endOffset": 7222
+                    "startOffset": 4420,
+                    "endColumn": 44,
+                    "endOffset": 4460
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 102,
-                        "startColumn": 4,
-                        "startOffset": 7157,
-                        "endColumn": 69,
-                        "endOffset": 7222
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 7227,
-                    "endColumn": 120,
-                    "endOffset": 7343
+                    "startOffset": 4465,
+                    "endColumn": 86,
+                    "endOffset": 4547
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 105,
-                        "startColumn": 4,
-                        "startOffset": 7399,
-                        "endColumn": 120,
-                        "endOffset": 7515
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 7348,
-                    "endColumn": 77,
-                    "endOffset": 7421
+                    "startOffset": 4552,
+                    "endColumn": 137,
+                    "endOffset": 4685
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 106,
-                        "startColumn": 4,
-                        "startOffset": 7520,
-                        "endColumn": 77,
-                        "endOffset": 7593
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 7426,
-                    "endColumn": 71,
-                    "endOffset": 7493
+                    "startOffset": 4690,
+                    "endColumn": 53,
+                    "endOffset": 4739
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 103,
-                        "startColumn": 4,
-                        "startOffset": 7227,
-                        "endColumn": 71,
-                        "endOffset": 7294
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 7498,
-                    "endColumn": 99,
-                    "endOffset": 7593
+                    "startOffset": 4744,
+                    "endColumn": 53,
+                    "endOffset": 4793
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 104,
-                        "startColumn": 4,
-                        "startOffset": 7299,
-                        "endColumn": 99,
-                        "endOffset": 7394
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 7598,
-                    "endColumn": 61,
-                    "endOffset": 7655
+                    "startOffset": 4798,
+                    "endColumn": 54,
+                    "endOffset": 4848
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 107,
-                        "startColumn": 4,
-                        "startOffset": 7598,
-                        "endColumn": 61,
-                        "endOffset": 7655
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 7660,
-                    "endColumn": 66,
-                    "endOffset": 7722
+                    "startOffset": 4853,
+                    "endColumn": 106,
+                    "endOffset": 4955
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 108,
-                        "startColumn": 4,
-                        "startOffset": 7660,
-                        "endColumn": 66,
-                        "endOffset": 7722
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 7727,
-                    "endColumn": 64,
-                    "endOffset": 7787
+                    "startOffset": 4960,
+                    "endColumn": 49,
+                    "endOffset": 5005
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 109,
-                        "startColumn": 4,
-                        "startOffset": 7727,
-                        "endColumn": 64,
-                        "endOffset": 7787
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 7792,
-                    "endColumn": 68,
-                    "endOffset": 7856
+                    "startOffset": 5010,
+                    "endColumn": 49,
+                    "endOffset": 5055
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 110,
-                        "startColumn": 4,
-                        "startOffset": 7792,
-                        "endColumn": 68,
-                        "endOffset": 7856
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 7861,
-                    "endColumn": 67,
-                    "endOffset": 7924
+                    "startOffset": 5060,
+                    "endColumn": 105,
+                    "endOffset": 5161
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 111,
-                        "startColumn": 4,
-                        "startOffset": 7861,
-                        "endColumn": 67,
-                        "endOffset": 7924
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 7929,
-                    "endColumn": 50,
-                    "endOffset": 7975
+                    "startOffset": 5166,
+                    "endColumn": 57,
+                    "endOffset": 5219
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 112,
-                        "startColumn": 4,
-                        "startOffset": 7929,
-                        "endColumn": 50,
-                        "endOffset": 7975
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 7980,
-                    "endColumn": 56,
-                    "endOffset": 8032
+                    "startOffset": 5224,
+                    "endColumn": 68,
+                    "endOffset": 5288
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 113,
-                        "startColumn": 4,
-                        "startOffset": 7980,
-                        "endColumn": 56,
-                        "endOffset": 8032
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 8037,
-                    "endColumn": 56,
-                    "endOffset": 8089
+                    "startOffset": 5293,
+                    "endColumn": 86,
+                    "endOffset": 5375
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 114,
-                        "startColumn": 4,
-                        "startOffset": 8037,
-                        "endColumn": 56,
-                        "endOffset": 8089
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 8094,
-                    "endColumn": 57,
-                    "endOffset": 8147
+                    "startOffset": 5380,
+                    "endColumn": 197,
+                    "endOffset": 5573
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 115,
-                        "startColumn": 4,
-                        "startOffset": 8094,
-                        "endColumn": 57,
-                        "endOffset": 8147
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 8152,
-                    "endColumn": 56,
-                    "endOffset": 8204
+                    "startOffset": 5578,
+                    "endColumn": 138,
+                    "endOffset": 5712
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 116,
-                        "startColumn": 4,
-                        "startOffset": 8152,
-                        "endColumn": 56,
-                        "endOffset": 8204
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 8209,
-                    "endColumn": 48,
-                    "endOffset": 8253
+                    "startOffset": 5717,
+                    "endColumn": 49,
+                    "endOffset": 5762
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 117,
-                        "startColumn": 4,
-                        "startOffset": 8209,
-                        "endColumn": 48,
-                        "endOffset": 8253
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 8258,
-                    "endColumn": 64,
-                    "endOffset": 8318
+                    "startOffset": 5767,
+                    "endColumn": 91,
+                    "endOffset": 5854
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 118,
-                        "startColumn": 4,
-                        "startOffset": 8258,
-                        "endColumn": 64,
-                        "endOffset": 8318
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 8323,
-                    "endColumn": 55,
-                    "endOffset": 8374
+                    "startOffset": 5859,
+                    "endColumn": 83,
+                    "endOffset": 5938
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 119,
-                        "startColumn": 4,
-                        "startOffset": 8323,
-                        "endColumn": 55,
-                        "endOffset": 8374
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 8379,
-                    "endColumn": 56,
-                    "endOffset": 8431
+                    "startOffset": 5943,
+                    "endColumn": 69,
+                    "endOffset": 6008
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 120,
-                        "startColumn": 4,
-                        "startOffset": 8379,
-                        "endColumn": 56,
-                        "endOffset": 8431
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 8436,
-                    "endColumn": 88,
-                    "endOffset": 8520
+                    "startOffset": 6013,
+                    "endColumn": 45,
+                    "endOffset": 6054
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 121,
-                        "startColumn": 4,
-                        "startOffset": 8436,
-                        "endColumn": 88,
-                        "endOffset": 8520
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 8525,
-                    "endColumn": 56,
-                    "endOffset": 8577
+                    "startOffset": 6059,
+                    "endColumn": 51,
+                    "endOffset": 6106
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 122,
-                        "startColumn": 4,
-                        "startOffset": 8525,
-                        "endColumn": 56,
-                        "endOffset": 8577
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 8582,
-                    "endColumn": 48,
-                    "endOffset": 8626
+                    "startOffset": 6111,
+                    "endColumn": 71,
+                    "endOffset": 6178
                 },
                 "from": {
-                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 123,
-                        "startColumn": 4,
-                        "startOffset": 8582,
-                        "endColumn": 48,
-                        "endOffset": 8626
-                    }
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 6183,
+                    "endColumn": 77,
+                    "endOffset": 6256
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 6261,
+                    "endColumn": 61,
+                    "endOffset": 6318
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 6323,
+                    "endColumn": 143,
+                    "endOffset": 6462
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 6467,
+                    "endColumn": 95,
+                    "endOffset": 6558
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 6563,
+                    "endColumn": 76,
+                    "endOffset": 6635
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 6640,
+                    "endColumn": 50,
+                    "endOffset": 6686
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 6691,
+                    "endColumn": 81,
+                    "endOffset": 6768
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 6773,
+                    "endColumn": 83,
+                    "endOffset": 6852
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 6857,
+                    "endColumn": 71,
+                    "endOffset": 6924
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 6929,
+                    "endColumn": 98,
+                    "endOffset": 7023
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 7028,
+                    "endColumn": 70,
+                    "endOffset": 7094
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 7099,
+                    "endColumn": 81,
+                    "endOffset": 7176
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 7181,
+                    "endColumn": 140,
+                    "endOffset": 7317
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 7322,
+                    "endColumn": 85,
+                    "endOffset": 7403
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 7408,
+                    "endColumn": 67,
+                    "endOffset": 7471
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 7476,
+                    "endColumn": 76,
+                    "endOffset": 7548
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 7553,
+                    "endColumn": 64,
+                    "endOffset": 7613
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 7618,
+                    "endColumn": 91,
+                    "endOffset": 7705
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 7710,
+                    "endColumn": 101,
+                    "endOffset": 7807
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 7812,
+                    "endColumn": 90,
+                    "endOffset": 7898
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 7903,
+                    "endColumn": 74,
+                    "endOffset": 7973
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 7978,
+                    "endColumn": 156,
+                    "endOffset": 8130
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 8135,
+                    "endColumn": 73,
+                    "endOffset": 8204
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 8209,
+                    "endColumn": 70,
+                    "endOffset": 8275
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 148,
+                    "startColumn": 4,
+                    "startOffset": 8280,
+                    "endColumn": 53,
+                    "endOffset": 8329
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 149,
+                    "startColumn": 4,
+                    "startOffset": 8334,
+                    "endColumn": 60,
+                    "endOffset": 8390
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 150,
+                    "startColumn": 4,
+                    "startOffset": 8395,
+                    "endColumn": 119,
+                    "endOffset": 8510
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 8515,
+                    "endColumn": 85,
+                    "endOffset": 8596
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 152,
+                    "startColumn": 4,
+                    "startOffset": 8601,
+                    "endColumn": 68,
+                    "endOffset": 8665
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 153,
+                    "startColumn": 4,
+                    "startOffset": 8670,
+                    "endColumn": 95,
+                    "endOffset": 8761
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 8766,
+                    "endColumn": 69,
+                    "endOffset": 8831
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 155,
+                    "startColumn": 4,
+                    "startOffset": 8836,
+                    "endColumn": 120,
+                    "endOffset": 8952
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 8957,
+                    "endColumn": 77,
+                    "endOffset": 9030
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 9035,
+                    "endColumn": 71,
+                    "endOffset": 9102
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 158,
+                    "startColumn": 4,
+                    "startOffset": 9107,
+                    "endColumn": 99,
+                    "endOffset": 9202
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 9207,
+                    "endColumn": 61,
+                    "endOffset": 9264
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 160,
+                    "startColumn": 4,
+                    "startOffset": 9269,
+                    "endColumn": 66,
+                    "endOffset": 9331
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 161,
+                    "startColumn": 4,
+                    "startOffset": 9336,
+                    "endColumn": 64,
+                    "endOffset": 9396
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 162,
+                    "startColumn": 4,
+                    "startOffset": 9401,
+                    "endColumn": 68,
+                    "endOffset": 9465
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 163,
+                    "startColumn": 4,
+                    "startOffset": 9470,
+                    "endColumn": 67,
+                    "endOffset": 9533
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 9538,
+                    "endColumn": 50,
+                    "endOffset": 9584
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 165,
+                    "startColumn": 4,
+                    "startOffset": 9589,
+                    "endColumn": 56,
+                    "endOffset": 9641
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 166,
+                    "startColumn": 4,
+                    "startOffset": 9646,
+                    "endColumn": 56,
+                    "endOffset": 9698
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 167,
+                    "startColumn": 4,
+                    "startOffset": 9703,
+                    "endColumn": 57,
+                    "endOffset": 9756
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 168,
+                    "startColumn": 4,
+                    "startOffset": 9761,
+                    "endColumn": 56,
+                    "endOffset": 9813
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 169,
+                    "startColumn": 4,
+                    "startOffset": 9818,
+                    "endColumn": 48,
+                    "endOffset": 9862
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 170,
+                    "startColumn": 4,
+                    "startOffset": 9867,
+                    "endColumn": 64,
+                    "endOffset": 9927
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 171,
+                    "startColumn": 4,
+                    "startOffset": 9932,
+                    "endColumn": 55,
+                    "endOffset": 9983
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 172,
+                    "startColumn": 4,
+                    "startOffset": 9988,
+                    "endColumn": 56,
+                    "endOffset": 10040
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 173,
+                    "startColumn": 4,
+                    "startOffset": 10045,
+                    "endColumn": 88,
+                    "endOffset": 10129
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 174,
+                    "startColumn": 4,
+                    "startOffset": 10134,
+                    "endColumn": 56,
+                    "endOffset": 10186
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 175,
+                    "startColumn": 4,
+                    "startOffset": 10191,
+                    "endColumn": 48,
+                    "endOffset": 10235
+                },
+                "from": {
+                    "file": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\values\\strings.xml"
                 }
             }
         ]

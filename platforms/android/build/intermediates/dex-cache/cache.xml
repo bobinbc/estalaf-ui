@@ -2,6 +2,20 @@
 <items version="2" >
 
     <item
+        jar="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\libs\com.google.zxing.client.android.captureactivity.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="daca75b7de34e1ca229682f2cd54b54e1c324be6">
+        <dex dex="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\build\intermediates\pre-dexed\debug\com.google.zxing.client.android.captureactivity_b48b1a4b1acad4de3b57b0d27574b50cbfe042b2.jar" />
+    </item>
+    <item
+        jar="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="bdc32e901e82b3dfe54031442ce04cd5b349ceae">
+        <dex dex="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_29ca95f71e368b33551ee96e636fd524e915c114.jar" />
+    </item>
+    <item
         jar="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"

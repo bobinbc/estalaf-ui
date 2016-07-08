@@ -23,7 +23,7 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
   .state('register', {
       url: '/register',
       templateUrl: 'templates/register.html',
-      controller:'RegisterCtrl'
+            controller:'RegisterCtrl'
     })
     .state('login', {
       url: '/login',
