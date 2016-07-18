@@ -54,9 +54,7 @@
   padding-left: 18px;
   color: #adad85;
 }
-.button.button-block.button-positive.loginButton {
-  border-radius: 18px;
-}
+
 
 /*Validation colors for login page*/
 
@@ -126,16 +124,21 @@
 /*icon style*/
 
 .menu-blob {
-  border-radius: 100px;
+  border-radius: 200px;
   background-color: #EBC50D;
   box-shadow: 3px 3px 3px #888888;
+  font-size: 10em;
 }
 .blue-btn {
   color: #007BC0;
   font-size: 2em;
 }
 .row.scanButton {
-  padding: 20% 30% 33% 20%;
+  padding: 10% 0;
+}
+
+.row.or{
+  padding-top:20%;
 }
 
 /*end of icon style*/
@@ -145,6 +148,37 @@
 
 .p {
   margin-top: 30%;
+  padding:0 10%;
 }
 
+/*.item-select select,  .item-select select option{
+  left: 75%;
+}*/
+
+.item-select {
+  width: 75%; /* Or whatever you'd like the width to be */
+}
+
+.item-select select {
+  left: 0;
+}
+
+#clubs{
+  width:200px !important;
+  padding-right: 0px !important;
+}
 /*end of home page*/
+
+/*member page*/
+#memberList{
+  padding-top:10%;
+}
+/*end of member page*/
+
+/*This is to show the dropdown in the header*/
+.item.item-input.item-select{
+  z-index: 1000;
+  margin-left:10%;
+  height:7.2%;
+}
+/*end*/

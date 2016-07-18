@@ -1,22 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\config.xml",
-        "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\res\\xml\\config.xml"
+        "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/xml/config.xml",
+        "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/xml/config.xml"
     },
     {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\xml\\preferences.xml"
-    },
-    {
-        "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalafUI\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\config.xml",
-        "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalafUI\\platforms\\android\\res\\xml\\config.xml"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui2\\trunk\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\config.xml",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui2\\trunk\\platforms\\android\\res\\xml\\config.xml"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\config.xml",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\xml\\config.xml"
+        "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/xml/preferences.xml"
     }
 ]

@@ -49,6 +49,11 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
       url:'/addResource',
       templateUrl:'templates/addResource.html',
       controller:'AddResCtrl'
+    })
+    .state('member',{
+      url:'/member',
+      templateUrl:'templates/member.html',
+      controller:'MemberCtrl'
     });
   $urlRouterProvider.otherwise('/register');
 });

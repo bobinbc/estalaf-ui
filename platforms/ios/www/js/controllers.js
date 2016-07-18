@@ -13,7 +13,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       success: function(data, status) {
         if (data.success == true) {
           $localStorage.token = data.token.value;
-          $state.go('joinClub');
+          $state.go('home');
         } else if (data.success == false) {
           var alertPopup = $ionicPopup.alert({
             title: 'Login failed!',
@@ -74,7 +74,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       });
     }
   })
-  .controller('CreateCtrl', function($scope, $http, $ionicPopup, $state, $localStorage) {
+  .controller('CreateCtrl', function($scope, $http, $ionicPopup, $state, $localStorage,$ionicSideMenuDelegate) {
     $scope.createClub = function() {
       $.ajax({
         type: 'POST',
@@ -95,18 +95,18 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
           }
         }
       });
-    }
+    };
   })
   .controller('HomeCtrl', function($scope, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $ionicPopup, $localStorage, $window, $ionicHistory) {
 
-    // $scope.scanBarcode = function() {
-    //   $cordovaBarcodeScanner.scan().then(function(imageData) {
-    //     alert(imageData.text);
-    //     console.log("format" + imageData.format);
-    //   }, function(error) {
-    //     console.log("An Error: " + error);
-    //   });
-    // };
+     $scope.scanBarcode = function() {
+       $cordovaBarcodeScanner.scan().then(function(imageData) {
+         alert(imageData.text);
+         console.log("format" + imageData.format);
+       }, function(error) {
+         console.log("An Error: " + error);
+       });
+     };
     $scope.toggleLeft = function() {
       $ionicSideMenuDelegate.toggleLeft();
     };
@@ -114,6 +114,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       $state.go('addResource');
     };
     $scope.create = function() {
+      console.log("hi");
       $state.go('create');
     };
     $scope.join = function() {

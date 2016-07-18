@@ -18,12 +18,71 @@
 
   <!-- your app's js -->
   <script src="js/app.js"></script>
+  <script src="js/base.js"></script>
   <script src="js/controllers.js"></script>
 </head>
 
 <body ng-app="estalaf" class="platform-android platform-cordova platform-webview">
-  <ion-nav-view>
-  </ion-nav-view>
+  <ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-positive">
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+          </button>
+        </ion-nav-buttons>
+
+        <label class="item item-input item-select" id="clubsDropDown">
+          <div class="input-label">
+            &nbsp;
+          </div>
+          <select id="clubs"></select>
+        </label>
+        <div id="clubTextfield">
+          <h1 class="title"><font class='bold' id="clubNameDisplay"></font></h1></div>
+      </ion-nav-bar>
+      <ion-nav-view>
+
+      </ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" id="sideMenu">
+      <ion-header-bar class="bar-positive">
+
+        <div>
+          <h1 class="title"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> <font class='bold' id="clubName"></font></h1></div>
+
+      </ion-header-bar>
+      <ion-content>
+        <ion-list>
+          <ion-item id="home" menu-close href="#/home">
+            <i class="fa fa-home fa-lg" aria-hidden="true"></i> Home
+          </ion-item>
+          <ion-item id="edit" menu-close href="">
+            <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i> Edit Profile
+          </ion-item>
+          <ion-item menu-close id="notification" href="">
+            <i class="fa fa-bell fa-lg" aria-hidden="true"></i> Notification
+          </ion-item>
+          <ion-item menu-close id="search" href="">
+            <i class="fa fa-search fa-lg" aria-hidden="true"></i> Search
+          </ion-item>
+          <ion-item menu-close id="join" href="#/joinClub">
+            <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Join Club
+          </ion-item>
+          <ion-item menu-close href="#/create" id="create">
+            <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Create Club
+          </ion-item>
+          <ion-item menu-close href="#/member" id="memberApproval">
+            <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Member Approval
+          </ion-item>
+          <ion-item menu-close ng-click="logout()">
+            <i class="fa fa-power-off fa-lg" aria-hidden="true"></i> Sign out
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+
 </body>
 
 </html>

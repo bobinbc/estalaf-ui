@@ -1,18 +1,6 @@
 [
     {
-        "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalafUI\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\icon.png",
-        "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalafUI\\platforms\\android\\res\\drawable-mdpi\\icon.png"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui2\\trunk\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\icon.png",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui2\\trunk\\platforms\\android\\res\\drawable-mdpi\\icon.png"
-    },
-    {
-        "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\icon.png",
-        "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\res\\drawable-mdpi\\icon.png"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\icon.png",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\drawable-mdpi\\icon.png"
+        "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/drawable-mdpi-v4/icon.png",
+        "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/drawable-mdpi/icon.png"
     }
 ]
