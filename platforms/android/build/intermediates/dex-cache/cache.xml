@@ -11,15 +11,15 @@
     <item
         jar="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
         jumboMode="false"
-        revision="24.0.0"
+        revision="23.0.1"
         sha1="bdc32e901e82b3dfe54031442ce04cd5b349ceae">
         <dex dex="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_29ca95f71e368b33551ee96e636fd524e915c114.jar" />
     </item>
     <item
         jar="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="bdc32e901e82b3dfe54031442ce04cd5b349ceae">
+        revision="24.0.0"
+        sha1="91f492e8642f5457c70a7b23d4db00de547e3338">
         <dex dex="D:\Courseware\MSD\Summer\Capstone\SourceCode\UI\estalaf-ui\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_29ca95f71e368b33551ee96e636fd524e915c114.jar" />
     </item>
 

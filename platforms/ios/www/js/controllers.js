@@ -1,8 +1,7 @@
 angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
 
-.controller('LoginCtrl', function($scope, $ionicPopup, $state, $http, $localStorage) {
+.controller('LoginCtrl', function($scope, $ionicPopup, $state, $http, $localStorage, $cordovaOauth) {
   $scope.signIn = function() {
-
     $.ajax({
       type: 'POST',
       url: 'https://estalaf-production.herokuapp.com/login',
@@ -23,9 +22,16 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       }
     });
   }
+  $scope.googleLogin = function() {
+        $cordovaOauth.google("178964518843-uhsk0ar6q0m3im3jekjhdhj34f1i89fk.apps.googleusercontent.com", "7Ot1ZGxEflfyV_X6VSBqd8z8").then(function(result) {
+            console.log(JSON.stringify(result));
+        }, function(error) {
+            console.log(error);
+        });
+    }
 })
 
-.controller('RegisterCtrl', function($scope, $location, $ionicPopup, $http, $state, $localStorage) {
+.controller('RegisterCtrl', function($scope, $location, $ionicPopup, $http, $state, $localStorage, $cordovaOauth) {
 
     $scope.loginPage = function(path) {
       $location.path(path);
@@ -99,14 +105,14 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
   })
   .controller('HomeCtrl', function($scope, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $ionicPopup, $localStorage, $window, $ionicHistory) {
 
-    // $scope.scanBarcode = function() {
-    //   $cordovaBarcodeScanner.scan().then(function(imageData) {
-    //     alert(imageData.text);
-    //     console.log("format" + imageData.format);
-    //   }, function(error) {
-    //     console.log("An Error: " + error);
-    //   });
-    // };
+     $scope.scanBarcode = function() {
+       $cordovaBarcodeScanner.scan().then(function(imageData) {
+         alert(imageData.text);
+         console.log("format" + imageData.format);
+       }, function(error) {
+         console.log("An Error: " + error);
+       });
+     };
     $scope.toggleLeft = function() {
       $ionicSideMenuDelegate.toggleLeft();
     };

@@ -1,4 +1,4 @@
-angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
+angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova','ngCordovaOauth'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
