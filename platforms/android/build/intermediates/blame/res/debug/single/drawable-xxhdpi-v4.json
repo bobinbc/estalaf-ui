@@ -1,34 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalafUI\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
-        "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalafUI\\platforms\\android\\res\\drawable-xxhdpi\\icon.png"
+        "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/launcher_icon.png",
+        "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/drawable-xxhdpi/launcher_icon.png"
     },
     {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\drawable-xxhdpi\\icon.png"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui2\\trunk\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui2\\trunk\\platforms\\android\\res\\drawable-xxhdpi\\icon.png"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_remove.png",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\drawable-xxhdpi\\ic_action_remove.png"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_previous_item.png",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\drawable-xxhdpi\\ic_action_previous_item.png"
-    },
-    {
-        "merged": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
-        "source": "C:\\Users\\NITHIN\\Documents\\MSD\\capstone\\estalaf\\platforms\\android\\res\\drawable-xxhdpi\\icon.png"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_next_item.png",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\drawable-xxhdpi\\ic_action_next_item.png"
-    },
-    {
-        "merged": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\launcher_icon.png",
-        "source": "D:\\Courseware\\MSD\\Summer\\Capstone\\SourceCode\\UI\\estalaf-ui\\platforms\\android\\res\\drawable-xxhdpi\\launcher_icon.png"
+        "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icon.png",
+        "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/drawable-xxhdpi/icon.png"
     }
 ]

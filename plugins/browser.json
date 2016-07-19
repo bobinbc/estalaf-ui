@@ -25,7 +25,7 @@
         "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "com.ionicframework.estalaf688848"
         },
-        "cordova-plugin-inappbrowser": {
+        "cordova-plugin-x-toast": {
             "PACKAGE_NAME": "com.ionicframework.estalaf688848"
         }
     },
