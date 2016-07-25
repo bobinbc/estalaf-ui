@@ -38,11 +38,13 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
     })
     .state('create',{
       url:'/create',
+      cache: false,
       templateUrl:'templates/createClub.html',
       controller:'CreateCtrl'
     })
     .state('home',{
       url:'/home',
+      cache: false,
       templateUrl:'templates/home.html',
       controller:'HomeCtrl'
     })
@@ -53,6 +55,7 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
     })
     .state('member',{
       url:'/member',
+      cache: false,
       templateUrl:'templates/member.html',
       controller:'MemberCtrl'
     });

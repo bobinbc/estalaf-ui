@@ -10,24 +10,21 @@
     </div>
   </div>
   <div class="row scanButton">
-    <div class="col col-50 col-offset-10">
+    <div class="col col-50 col-offset-10" id='scanBarcode'>
       <span class="fa-stack fa-5x fa menu-blob" id="blob">
       <i class="fa fa-circle fa-stack-1x blue-btn"></i>
-      <i class="fa fa-barcode  fa-stack-1x" aria-hidden="true" style='color:white' ng-click="scanBarcode()"></i>
+      <i class="fa fa-barcode  fa-stack-1x" aria-hidden="true" style='color:white' ng-click="scanBarcode()" ></i>
     </span>
     </div>
   </div>
-  <div class="row or">
+  <div class="row or" id="hideOr">
   <div class="col"></div>
   <div class="col"></div>
   <div class="col">OR</div>
   <div class="col"></div>
   <div class="col"></div>
 </div>
-  <div class="col-offset-10">
+  <div class="col-offset-10" id="hideClick">
     Want to do manual entry? <a href="#/addResource">Click here</a>
   </div>
-  <!-- <div class="row responsive-md padding">
-    <button class="button button-block button-positive" ng-click="addResource()"> <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Add Resources</button>
-  </div> -->
 </ion-view>

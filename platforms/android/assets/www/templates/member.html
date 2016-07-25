@@ -1,9 +1,11 @@
 <ion-view>
-<ion-list show-delete="false" can-swipe="true" >
-  <ion-item href="#">
-    <h2>Item 2</h2>
-    <ion-option-button><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></ion-option-button>
-    <ion-option-button class="button-assertive"><i class=" fa fa-trash-o fa-2x" aria-hidden="true"></i></ion-option-button>
+<ion-list show-delete="false" can-swipe="true" ng-repeat="item in items" >
+  <ion-item class="item item-avatar">
+    <img src="./img/person.png">
+  <h2><b>{{item.first}} {{item.last}}</b></h2>
+    <ion-option-button  ng-click="add({{item.id}}); items.splice($index, 1)"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></ion-option-button>
+    <ion-option-button class="button-assertive" ng-click="delete({{item.id}}); items.splice($index, 1)"><i class=" fa fa-trash-o fa-2x" aria-hidden="true"></i></ion-option-button>
   </ion-item>
 </ion-list>
+<h3 id="noMember"><b>There is no pending member</b></h2>
 </ion-view>
