@@ -1,3 +1,9 @@
+/*Index Page*/
+#clubsDropDown{
+  position: fixed;
+}
+/*end of index page*/
+
 /*Registration Template*/
 
 #logo {
@@ -89,11 +95,6 @@
 
 
 /*end of login template*/
-
-.card {
-  background-color: #cfcfcf;
-  margin-top: 100px;
-}
 .button::after {
   font-weight: 900;
   font-size: larger;
@@ -105,22 +106,67 @@
 
 /*Join club template*/
 
+#joinClubLabel{
+  width:340px;
+}
+
 .row.responsive-md.join {
-  padding: 50% 10% 10% 10%;
+  padding: 50% 3% 10% 3%;
+
 }
 #joinPass {
   color: #d9534f;
+  padding:0px 10%;
 }
 #joinFail {
   color: #5cb85c;
+  padding:0px 10%;
+}
+
+#joinClubP{
+  margin-left:20%;
 }
 
 /*end*/
 
+/*create club*/
+#createclubForm{
+  margin-top: 20%;
+}
+
+/*end of create club
+
 
 /*Home page*/
 
+#range{
+  position: fixed;
+  padding:20% 0% 10%;
+  width:300%;
+}
 
+.toggle{
+  width:120px;
+  margin:-22px 0 -15% 186%;
+}
+
+#resource{
+  font-size: 17px;
+  width:10%;
+}
+
+#name{
+  padding-top: 2px;
+}
+/*.track{
+  margin-left:10px;
+}*/
+.handle{
+  margin-left:30px;
+}
+select #clubs{
+  background-color: red;
+}
 /*icon style*/
 
 .menu-blob {
@@ -134,26 +180,26 @@
   font-size: 2em;
 }
 .row.scanButton {
-  padding: 10% 0;
+  padding: 30% 0 0;
 }
 
-.row.or{
-  padding-top:20%;
+#or{
+  margin: 20% 45% 0%;
+}
+
+#hideClick{
+padding-left:18%;
 }
 
 /*end of icon style*/
 
 
-/**/
+/*home Page*/
 
 .p {
   margin-top: 30%;
   padding:0 10%;
 }
-
-/*.item-select select,  .item-select select option{
-  left: 75%;
-}*/
 
 .item-select {
   width: 75%; /* Or whatever you'd like the width to be */
@@ -170,8 +216,8 @@
 /*end of home page*/
 
 /*member page*/
-#memberList{
-  padding-top:10%;
+#member{
+  margin-top: 4%;
 }
 /*end of member page*/
 
