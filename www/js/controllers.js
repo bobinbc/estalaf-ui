@@ -21,7 +21,63 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
     });
   }
 })
+.controller('SearchResCtrl', function($scope, $state, $localStorage, $http) {
+      $('#search').hide();
+      $('#home').show();
 
+    $scope.items = [];
+    var config = {
+      headers: {
+        'token': $localStorage.token
+      }
+    };
+    $http.get('https://estalaf-production.herokuapp.com/', config).success(function(data) {
+      $.each(data.clubUsers, function(k, v){
+        if(v.Users.length>0){
+          $('#noMember').hide();
+        $.each(v.Users, function(k, v) {
+          $scope.items.push({
+            first: v.FIRST_NAME,
+            last: v.LAST_NAME,
+            id:v.USER_ID
+          });
+        });
+      }
+      else{
+        $('#noMember').show();
+      }
+      });
+    });
+
+    $scope.borrow=function(id){
+    $.ajax({
+      type:'PUT',
+      url:'https://estalaf-production.herokuapp.com/resources,
+      headers: {
+        'clubId': $localStorage.id,
+        'token': $localStorage.token
+      },
+      data:{'userId':id, 'clubId':$localStorage.id},
+        success: function(data, status) {
+          console.log("user added");
+        }
+      });
+    };
+
+    $scope.reserve=function(id){
+      $.ajax({
+        type:'PUT',
+        url:'https://estalaf-production.herokuapp.com/clubs/pendingUsers',
+        headers: {
+          'token': $localStorage.token
+        },
+        data:{'userId':id, 'clubId':$localStorage.id, 'disapprove':true},
+          success: function(data, status) {
+            console.log("user deleted");
+          }
+        });
+      };
+  })
 .controller('RegisterCtrl', function($scope, $location, $ionicPopup, $state, $localStorage) {
     $scope.loginPage = function(path) {
       $location.path(path);
@@ -64,7 +120,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       });
     };
   })
-  .controller('JoinCtrl', function($scope, $state, $cordovaToast, $localStorage) {
+.controller('JoinCtrl', function($scope, $state, $cordovaToast, $localStorage) {
     $scope.join = function() {
       $state.go('create');
     };
@@ -87,7 +143,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       });
     }
   })
-  .controller('CreateCtrl', function($scope, $cordovaToast, $state, $localStorage) {
+.controller('CreateCtrl', function($scope, $cordovaToast, $state, $localStorage) {
       $('#memberApproval').hide();
       $('#home').show();
     $scope.createClub = function() {
@@ -109,7 +165,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       });
     };
   })
-  .controller('HomeCtrl', function($scope, $filter, $location, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $ionicPopup, $localStorage, $window, $ionicHistory) {
+.controller('HomeCtrl', function($scope, $filter, $location, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $ionicPopup, $localStorage, $window, $ionicHistory) {
     $('#range').hide();
     $('#or').hide();
     $('#hideClick').hide();
@@ -224,7 +280,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       console.log("hi");
     }
   })
-  .controller('AddResCtrl', function($scope, $state, $localStorage) {
+.controller('AddResCtrl', function($scope, $state, $localStorage) {
     $('#memberApproval').hide();
     $('#home').show();
 
@@ -253,7 +309,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       });
     }
   })
-  .controller('MemberCtrl', function($scope, $state, $localStorage, $http) {
+.controller('MemberCtrl', function($scope, $state, $localStorage, $http) {
       $('#memberApproval').hide();
       $('#home').show();
 
