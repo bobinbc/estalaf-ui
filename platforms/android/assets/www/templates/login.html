@@ -4,14 +4,14 @@
     <div class="col col-offset-33" id="logo">Estalaf</div>
   </div>
   <form name="loginForm" ng-submit="loginForm.$valid && signIn()" novalidate>
-    <div class="list list-inset padding-horizontal">
+    <div class="list list-inset">
       <label class="item item-input" ng-class="{fail:(loginForm.userEmail.$dirty && loginForm.userEmail.$invalid) || (loginForm.userEmail.$pristine && loginForm.$submitted),success:loginForm.userEmail.$dirty && loginForm.userEmail.$valid}">
         <input type="email" placeholder="Email" name="userEmail" id="inputUser" ng-model="email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
         <i class="ion-checkmark-circled padding-horizontal" ng-show="(loginForm.userEmail.$dirty && loginForm.userEmail.$valid)" id="userSuccess"></i><i class="ion-close-circled error padding-horizontal" ng-show="(loginForm.userEmail.$dirty && loginForm.userEmail.$invalid)||(loginForm.userEmail.$pristine && loginForm.$submitted)"
             id="userFail"></i>
       </label>
     </div>
-    <div class="list list-inset padding-horizontal">
+    <div class="list list-inset">
       <label class="item item-input" ng-class="{fail:(loginForm.userPassword.$dirty && loginForm.userPassword.$invalid)||(loginForm.userPassword.$pristine && loginForm.$submitted),success:loginForm.userPassword.$dirty && loginForm.userPassword.$valid}">
         <input type="password" name="userPassword" ng-model="password" placeholder="Password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
         <i class="ion-checkmark-circled padding-horizontal" ng-show="loginForm.userPassword.$dirty && loginForm.userPassword.$valid" id="passSuccess"></i><i class="ion-close-circled error padding-horizontal" ng-show="(loginForm.userPassword.$dirty && loginForm.userPassword.$invalid)||(loginForm.userPassword.$pristine && loginForm.$submitted)"

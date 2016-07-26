@@ -1,22 +1,22 @@
 <ion-view hide-nav-bar="true">
-  <div class="bar bar-header bar-dark">
+  <div class="bar bar-header bar-positive">
     <h1 class="title"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i> Join Club</h1>
   </div>
   <form name="joinClubForm" ng-submit="joinClubForm.$valid &&joinClub()" novalidate>
     <div class="row responsive-md join">
-      <label class="item item-input" ng-class='{fail:(joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$invalid ||(joinClubForm.clubCode.$pristine && joinClubForm.$submitted)),success:joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$valid}'>
+      <label class="item item-input" id="joinClubLabel" ng-class='{fail:(joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$invalid ||(joinClubForm.clubCode.$pristine && joinClubForm.$submitted)),success:joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$valid}'>
         <span class="input-label">Club Code</span>
         <input type="text" name="clubCode" ng-model="clubCode" required>
-        <i class="fa fa-times-circle fa-lg padding-horizontal" aria-hidden="true" ng-show="joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$invalid ||(joinClubForm.clubCode.$pristine && joinClubForm.$submitted)" id="joinPass"></i><i class="fa fa-check-circle padding-horizontal fa-lg"
+        <i class="fa fa-times-circle fa-lg " aria-hidden="true" ng-show="joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$invalid ||(joinClubForm.clubCode.$pristine && joinClubForm.$submitted)" id="joinPass"></i><i class="fa fa-check-circle  fa-lg"
             aria-hidden="true" ng-show="joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$valid" id="joinFail"></i>
       </label>
     </div>
-    <div class="row responsive-md padding">
+    <div class="row responsive-md padding-top padding-horizontal">
       <button class="button button-block button-positive"> <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Join Club</button>
     </div>
   </form>
-  <div class="row">
-    <div class="col col-offset-20">
+
+    <div id="joinClubP">
       <p>Do you want to create the club?</P>
     </div>
   </div>

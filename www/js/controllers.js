@@ -111,7 +111,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
   })
   .controller('HomeCtrl', function($scope, $filter, $location, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $ionicPopup, $localStorage, $window, $ionicHistory) {
     $('#range').hide();
-    $('#hideOr').hide();
+    $('#or').hide();
     $('#hideClick').hide();
     $('#memberApproval').hide();
     $('#home').hide();
@@ -179,13 +179,13 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
 
       if (role == "Select club") {
         $('#range').hide();
-        $('#hideOr').hide();
+        $('#or').hide();
         $('#hideClick').hide();
         $('#memberApproval').hide();
 
       } else if (role == "PENDING-MEMBER") {
         $('#range').hide();
-        $('#hideOr').hide();
+        $('#or').hide();
         $('#hideClick').hide();
         $('#memberApproval').hide();
 
@@ -195,13 +195,13 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
         var id = val1.pop();
         $localStorage.id = id;
         $('#range').show();
-        $('#hideOr').show();
+        $('#or').show();
         $('#hideClick').show();
         $('#memberApproval').show();
 
       } else if (role == "MEMBER") {
         $('#range').hide();
-        $('#hideOr').hide();
+        $('#or').hide();
         $('#hideClick').hide();
         $('#memberApproval').hide();
       }
@@ -220,8 +220,14 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
     $scope.addResource = function() {
       $state.go('addResource');
     };
+    $scope.toggleChange=function(){
+      console.log("hi");
+    }
   })
   .controller('AddResCtrl', function($scope, $state, $localStorage) {
+    $('#memberApproval').hide();
+    $('#home').show();
+
     $scope.addResource = function() {
       $.ajax({
         type: 'POST',

@@ -1,22 +1,22 @@
-<ion-view>
-  
-    <form name="createClubForm" ng-submit="createClub()">
-  <div class="card">
-    <div>
-      <div class="list list-inset">
-        <label class="item item-input">
-          <input type="text" placeholder="Club Name" ng-model="clubName" required>
-        </label>
-      </div>
-      <div class="padding">
-        <textarea placeholder="Description" rows="10" class="col responsive-lg" ng-model="clubDescription" required>
-        </textarea>
-      </div>
-    </div>
-  </div>
+<ion-view style="margin-top:10%">
 
-  <div class="padding">
-    <button  class="button button-block button-positive"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Create</button>
-  </div>
-</form>
+  <form name="createClubForm" ng-submit="createClub()">
+    <div class="list list-inset" id="createclubForm">
+      <label class="item item-input padding">
+        <input type="text" placeholder="Club Name" ng-model="clubName" required>
+      </label>
+    </div>
+
+    <div class="list list-inset">
+      <label class="item item-input padding">
+        <textarea type="text" placeholder="Description" rows="10" ng-model="clubDescription" required>
+        </textarea>
+      </label>
+    </div>
+
+
+    <div class="padding">
+      <button class="button button-block button-positive"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Create Club</button>
+    </div>
+  </form>
 </ion-view>

@@ -1,8 +1,8 @@
-<ion-view>
+<ion-view style="margin-top:9%">
 <ion-list show-delete="false" can-swipe="true" ng-repeat="item in items" >
   <ion-item class="item item-avatar">
     <img src="./img/person.png">
-  <h2><b>{{item.first}} {{item.last}}</b></h2>
+  <h2 id="member"><b>{{item.first}} {{item.last}}</b></h2>
     <ion-option-button  ng-click="add({{item.id}}); items.splice($index, 1)"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></ion-option-button>
     <ion-option-button class="button-assertive" ng-click="delete({{item.id}}); items.splice($index, 1)"><i class=" fa fa-trash-o fa-2x" aria-hidden="true"></i></ion-option-button>
   </ion-item>

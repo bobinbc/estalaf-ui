@@ -1,12 +1,20 @@
-<ion-view>
-
+<ion-view style="margin-top:10%">
   <div class="padding">
-    <div class="range range-positive" id="range">
-      <i class="icon ion-ios-sunny-outline"></i>
-      <p>Add Resources</p>
-      <input type="range" name="volume" min="0" max="100" value="33">
-      <i class="icon ion-ios-sunny"></i>
-      <p>Borrow resources</p>
+    <div id="range">
+      <ul>
+        <li id="resource">
+      <div id="name">Resources</div>
+      <label class="toggle">
+        <i class="fa fa-minus-circle fa-2x" aria-hidden="true"></i>
+        <input type="checkbox">
+        <div class="track">
+          <div class="handle"></div>
+        </div>
+         <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+      </label>
+
+    </li>
+    </ul>
     </div>
   </div>
   <div class="row scanButton">
@@ -17,14 +25,9 @@
     </span>
     </div>
   </div>
-  <div class="row or" id="hideOr">
-  <div class="col"></div>
-  <div class="col"></div>
-  <div class="col">OR</div>
-  <div class="col"></div>
-  <div class="col"></div>
-</div>
-  <div class="col-offset-10" id="hideClick">
+  <div id="or">OR</div>
+  </div>
+  <div id="hideClick">
     Want to do manual entry? <a href="#/addResource">Click here</a>
   </div>
 </ion-view>
