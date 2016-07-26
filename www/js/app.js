@@ -1,4 +1,4 @@
-angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova','ngCordovaOauth'])
+angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
 
 .run(function($ionicPlatform,$rootScope) {
   $ionicPlatform.ready(function() {
@@ -16,7 +16,7 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova','ngCordovaO
     if (window.StatusBar) {
       StatusBar.styleDefault();
     }
-      
+
   });
 
 })

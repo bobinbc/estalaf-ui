@@ -31,7 +31,8 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
         'token': $localStorage.token
       }
     };
-    $http.get('https://estalaf-production.herokuapp.com/', config).success(function(data) {
+    $http.get('https://estalaf-production.herokuapp.com/resources', config).success(function(data) {
+      console.log(data);
       $.each(data.clubUsers, function(k, v){
         if(v.Users.length>0){
           $('#noMember').hide();
@@ -49,34 +50,34 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
       });
     });
 
-    $scope.borrow=function(id){
-    $.ajax({
-      type:'PUT',
-      url:'https://estalaf-production.herokuapp.com/resources,
-      headers: {
-        'clubId': $localStorage.id,
-        'token': $localStorage.token
-      },
-      data:{'userId':id, 'clubId':$localStorage.id},
-        success: function(data, status) {
-          console.log("user added");
-        }
-      });
-    };
-
-    $scope.reserve=function(id){
-      $.ajax({
-        type:'PUT',
-        url:'https://estalaf-production.herokuapp.com/clubs/pendingUsers',
-        headers: {
-          'token': $localStorage.token
-        },
-        data:{'userId':id, 'clubId':$localStorage.id, 'disapprove':true},
-          success: function(data, status) {
-            console.log("user deleted");
-          }
-        });
-      };
+    // $scope.borrow=function(id){
+    // $.ajax({
+    //   type:'PUT',
+    //   url:'https://estalaf-production.herokuapp.com/resources,
+    //   headers: {
+    //     'clubId': $localStorage.id,
+    //     'token': $localStorage.token
+    //   },
+    //   data:{'userId':id, 'clubId':$localStorage.id},
+    //     success: function(data, status) {
+    //       console.log("user added");
+    //     }
+    //   });
+    // };
+    //
+    // $scope.reserve=function(id){
+    //   $.ajax({
+    //     type:'PUT',
+    //     url:'https://estalaf-production.herokuapp.com/clubs/pendingUsers',
+    //     headers: {
+    //       'token': $localStorage.token
+    //     },
+    //     data:{'userId':id, 'clubId':$localStorage.id, 'disapprove':true},
+    //       success: function(data, status) {
+    //         console.log("user deleted");
+    //       }
+    //     });
+      // };
   })
 .controller('RegisterCtrl', function($scope, $location, $ionicPopup, $state, $localStorage) {
     $scope.loginPage = function(path) {
