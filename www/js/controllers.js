@@ -31,18 +31,17 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
         'token': $localStorage.token
       }
     };
-    $http.get('https://estalaf-production.herokuapp.com/resources', config).success(function(data) {
-      console.log(data);
-      $.each(data.clubUsers, function(k, v){
-        if(v.Users.length>0){
+    $http.get('https://estalaf-production.herokuapp.com/resources?clubId='+$localStorage.id, config).success(function(data) {
+      $.each(data.resources, function(k, v){
+        if(data.resources.length>0){
           $('#noMember').hide();
-        $.each(v.Users, function(k, v) {
+//        $.each(v.resources, function(k, v) {
           $scope.items.push({
-            first: v.FIRST_NAME,
-            last: v.LAST_NAME,
-            id:v.USER_ID
+            first: v.RESOURCE_NAME,
+//            last: v.LAST_NAME,
+            id:v.RESOURCE_ID
           });
-        });
+//        });
       }
       else{
         $('#noMember').show();
@@ -266,6 +265,30 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
     $scope.scanBarcode = function() {
       $cordovaBarcodeScanner.scan().then(function(imageData) {
         alert(imageData.text);
+
+//          $.ajax({
+//        type: 'POST',
+//        url: 'https://estalaf-production.herokuapp.com/resources',
+//        data: {
+//          'resourceName': $scope.resourceName,
+//          'resourceDescription': $scope.resourceDescription,
+//          'resourceMCode': '001',
+//          'clubId': $localStorage.id,
+//          // 'resourceMcode':
+////           'manual':true,
+//          // 'resourceQuantity':
+//          'manual': false,
+//          'token': $localStorage.token
+//        },
+//        success: function(data, status) {
+//          if (data.success == true) {
+//            $state.go('home');
+//          } else if (data.success == false) {
+//            // console.log("fail");
+//          }
+//        }
+//      });
+
         //  console.log("format" + imageData.format);
       }, function(error) {
         //  console.log("An Error: " + error);
@@ -292,12 +315,12 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova'])
         data: {
           'resourceName': $scope.resourceName,
           'resourceDescription': $scope.resourceDescription,
-          'resourceCode': 'xyz',
-          'clubId': 4,
+          'resourceMCode': '001',
+          'clubId': $localStorage.id,
           // 'resourceMcode':
-          // 'manual':true,
+//           'manual':true,
           // 'resourceQuantity':
-          'manual': false,
+          'manual': true,
           'token': $localStorage.token
         },
         success: function(data, status) {
