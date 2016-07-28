@@ -4,7 +4,19 @@
         "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/drawable-xxhdpi/launcher_icon.png"
     },
     {
+        "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_action_previous_item.png",
+        "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/drawable-xxhdpi/ic_action_previous_item.png"
+    },
+    {
         "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icon.png",
         "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/drawable-xxhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_action_next_item.png",
+        "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/drawable-xxhdpi/ic_action_next_item.png"
+    },
+    {
+        "merged": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_action_remove.png",
+        "source": "/Users/estalaf/Desktop/estalaf-ui/platforms/android/res/drawable-xxhdpi/ic_action_remove.png"
     }
 ]

@@ -52,11 +52,13 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
     })
     .state('addResource',{
       url:'/addResource',
+      cache: false,
       templateUrl:'templates/addResource.html',
       controller:'AddResCtrl'
     })
     .state('searchResource',{
       url:'/searchResource',
+      cache: false,
       templateUrl:'templates/searchResource.html',
       controller:'SearchResCtrl'
     })

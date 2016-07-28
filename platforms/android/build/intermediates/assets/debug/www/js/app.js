@@ -1,4 +1,4 @@
-angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova','ngCordovaOauth'])
+angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
 
 .run(function($ionicPlatform,$rootScope) {
   $ionicPlatform.ready(function() {
@@ -16,7 +16,7 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova','ngCordovaO
     if (window.StatusBar) {
       StatusBar.styleDefault();
     }
-      
+
   });
 
 })
@@ -52,8 +52,15 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova','ngCordovaO
     })
     .state('addResource',{
       url:'/addResource',
+      cache: false,
       templateUrl:'templates/addResource.html',
       controller:'AddResCtrl'
+    })
+    .state('searchResource',{
+      url:'/searchResource',
+      cache: false,
+      templateUrl:'templates/searchResource.html',
+      controller:'SearchResCtrl'
     })
     .state('member',{
       url:'/member',
