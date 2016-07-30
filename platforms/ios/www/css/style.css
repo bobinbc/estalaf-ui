@@ -1,3 +1,9 @@
+/*Index Page*/
+#clubsDropDown{
+  position: fixed;
+}
+/*end of index page*/
+
 /*Registration Template*/
 
 #logo {
@@ -89,11 +95,6 @@
 
 
 /*end of login template*/
-
-.card {
-  background-color: #cfcfcf;
-  margin-top: 100px;
-}
 .button::after {
   font-weight: 900;
   font-size: larger;
@@ -105,44 +106,170 @@
 
 /*Join club template*/
 
+#joinClubLabel{
+  width:340px;
+}
+
 .row.responsive-md.join {
-  padding: 50% 10% 10% 10%;
+  padding: 50% 3% 10% 3%;
+
 }
 #joinPass {
   color: #d9534f;
+  padding:0px 10%;
 }
 #joinFail {
   color: #5cb85c;
+  padding:0px 10%;
+}
+
+#joinClubP{
+  margin-left:20%;
 }
 
 /*end*/
 
+/*create club*/
+#createclubForm{
+  margin-top: 20%;
+}
+
+/*end of create club
+
 
 /*Home page*/
 
+#range{
+  position: fixed;
+  padding:20% 0% 10%;
+  width:300%;
+}
 
+.toggle{
+  width:120px;
+  margin:-22px 0 -15% 186%;
+}
+
+#resource{
+  font-size: 17px;
+  width:10%;
+}
+
+#name{
+  padding-top: 2px;
+}
+/*.track{
+  margin-left:10px;
+}*/
+.handle{
+  margin-left:30px;
+}
+select #clubs{
+  background-color: red;
+}
 /*icon style*/
 
 .menu-blob {
-  border-radius: 100px;
+  border-radius: 200px;
   background-color: #EBC50D;
   box-shadow: 3px 3px 3px #888888;
+  font-size: 10em;
 }
 .blue-btn {
   color: #007BC0;
   font-size: 2em;
 }
 .row.scanButton {
-  padding: 20% 30% 33% 20%;
+  padding: 30% 0 0;
+}
+
+#or{
+  margin: 20% 45% 0%;
+}
+
+#hideClick{
+padding-left:18%;
 }
 
 /*end of icon style*/
 
 
-/**/
+/*home Page*/
 
 .p {
   margin-top: 30%;
+  padding:0 10%;
 }
 
+.item-select {
+  width: 75%; /* Or whatever you'd like the width to be */
+}
+
+.item-select select {
+  left: 0;
+}
+
+#clubs{
+  width:200px !important;
+  padding-right: 0px !important;
+}
 /*end of home page*/
+
+/*member page*/
+#memberList .item-content{
+  padding: 0px 0px 0px 72px !important;
+
+}
+#member{
+  margin-top: 9%;
+  width: 150px;
+  float:left;
+}
+
+#showSwipe{
+  float:right;
+  width: 0;
+	height: 0;
+  margin-top:17px;
+	border-top: 15px solid transparent;
+	border-right: 30px solid #ef473a;
+	border-bottom: 15px solid transparent;
+
+}
+
+/*end of member page*/
+
+/*This is to show the dropdown in the header*/
+.item.item-input.item-select{
+  z-index: 1000;
+  margin-left:10%;
+  height:7.2%;
+}
+/*end*/
+/*search resources page*/
+#searchResoure .item-content{
+  padding: 0px 0px 0px 10px !important;
+  height:72px;
+}
+
+#resources{
+  width:300px;
+  margin-top:12px;
+  float:left;
+}
+
+#resources i{
+  font-size:40px;
+}
+/*end*/
+
+/*Add Resources*/
+#addResource{
+  margin-top: 10%;
+  margin-bottom: 10px !important;
+}
+
+#textfield{
+  height:47px !important;
+}
+/*end*/

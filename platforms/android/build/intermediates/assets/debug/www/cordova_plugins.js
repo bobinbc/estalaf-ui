@@ -46,6 +46,21 @@ module.exports = [
     {
         "file": "plugins/cordova-plugin-x-toast/test/tests.js",
         "id": "cordova-plugin-x-toast.tests"
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/network.js",
+        "id": "cordova-plugin-network-information.network",
+        "clobbers": [
+            "navigator.connection",
+            "navigator.network.connection"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+        "id": "cordova-plugin-network-information.Connection",
+        "clobbers": [
+            "Connection"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -58,7 +73,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.2",
     "ionic-plugin-keyboard": "2.2.0",
     "phonegap-plugin-barcodescanner": "4.0.1",
-    "cordova-plugin-x-toast": "2.5.2"
+    "cordova-plugin-x-toast": "2.5.2",
+    "cordova-plugin-network-information": "1.2.1"
 };
 // BOTTOM OF METADATA
 });

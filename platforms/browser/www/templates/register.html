@@ -1,4 +1,4 @@
-<ion-view view-title="Register" name="register-view">
+<ion-view  hide-nav-bar="true">
 
     <div class="row" id="head">
       <div class="col col-offset-33" id="logo">Estalaf</div>
@@ -22,7 +22,7 @@
         </label>
         <label class="item item-input item-floating-label" ng-class="{regfail:(regForm.regPassword.$dirty && regForm.regPassword.$invalid)||(regForm.regPassword.$pristine && regForm.$submitted),regsuccess:regForm.regPassword.$dirty && regForm.regPassword.$valid}">
           <span class="input-label">Password</span>
-          <input type="password" placeholder="Password" name="regPassword" class="input" on-touch="passwordTouch()" ng-model="password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
+          <input type="password" placeholder="Password" name="regPassword" class="input" ng-model="password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
         </label>
       </div>
 
@@ -36,7 +36,7 @@
     </div>
 
     <div class="row padding-top padding-horizontal">
-      <button class="button button-block button-positive"><i class="fa fa-google fa-lg" aria-hidden="true"></i> Sign up with Google
+      <button class="button button-block button-positive" ng-click="googleRegistration()"><i class="fa fa-google fa-lg" aria-hidden="true"></i> Sign up with Google
       </button>
     </div>
 

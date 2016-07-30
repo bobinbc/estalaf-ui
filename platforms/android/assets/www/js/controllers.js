@@ -1,8 +1,12 @@
 angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpicker'])
 
 .controller('LoginCtrl', function($scope, $cordovaToast, $state, $localStorage) {
+  if(window.Connection) {
+    if(navigator.connection.type == Connection.NONE) {
+      $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+      }
+    }
     $scope.signIn = function() {
-
       $.ajax({
         type: 'POST',
         url: 'https://estalaf-production.herokuapp.com/login',
@@ -63,6 +67,11 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     };
   })
   .controller('JoinCtrl', function($scope, $state, $cordovaToast, $localStorage) {
+    if(window.Connection) {
+      if(navigator.connection.type == Connection.NONE) {
+        $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+        }
+      }
     $scope.join = function() {
       $state.go('create');
     };
@@ -86,6 +95,11 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     }
   })
   .controller('CreateCtrl', function($scope, $cordovaToast, $state, $localStorage) {
+    if(window.Connection) {
+      if(navigator.connection.type == Connection.NONE) {
+        $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+        }
+      }
     $('#memberApproval').hide();
     $('#home').show();
     $scope.createClub = function() {
@@ -107,7 +121,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
       });
     };
   })
-  .controller('HomeCtrl', function($scope, $filter, $location, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $ionicPopup, $localStorage, $window, $ionicHistory) {
+  .controller('HomeCtrl', function($scope, $filter, $location, $cordovaToast, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $localStorage, $window) {
     $('#range').hide();
     $('#or').hide();
     $('#hideClick').hide();
@@ -116,6 +130,11 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     $('#clubName').html('Select Club');
     $('#clubs').empty();
     $('#search').hide();
+    if(window.Connection) {
+      if(navigator.connection.type == Connection.NONE) {
+        $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+        }
+      }
 
     $scope.addResourcePage = function(path) {
       $location.path(path);
@@ -213,34 +232,12 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     $scope.scanBarcode = function() {
       $cordovaBarcodeScanner.scan().then(function(imageData) {
         var n = imageData.text;
-        $scope.resourceId = n;
-        alert(n);
-        $state.go('addResource');
+        // $scope.resourceId = n;
+        // alert(n);
+        // $state.go('addResource');
 
-        //          $.ajax({
-        //        type: 'POST',
-        //        url: 'https://estalaf-production.herokuapp.com/resources',
-        //        data: {
-        //          'resourceName': $scope.resourceName,
-        //          'resourceDescription': $scope.resourceDescription,
-        //          'resourceMCode': '001',
-        //          'clubId': $localStorage.id,
-        //          // 'resourceMcode':
-        ////           'manual':true,
-        //          // 'resourceQuantity':
-        //          'manual': false,
-        //          'token': $localStorage.token
-        //        },
-        //        success: function(data, status) {
-        //          if (data.success == true) {
-        //            $state.go('home');
-        //          } else if (data.success == false) {
-        //            // console.log("fail");
-        //          }
-        //        }
-        //      });
 
-        //  console.log("format" + imageData.format);
+         alert("format" + imageData.text);
       }, function(error) {
         //  console.log("An Error: " + error);
       });
@@ -256,6 +253,11 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     }
   })
   .controller('AddResCtrl', function($scope, $state, $localStorage) {
+    if(window.Connection) {
+      if(navigator.connection.type == Connection.NONE) {
+        $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+        }
+      }
     $('#memberApproval').hide();
     $('#home').show();
 
@@ -299,6 +301,12 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     }
   })
   .controller('SearchResCtrl', function($scope, $state, $localStorage, $http) {
+    if(window.Connection) {
+      if(navigator.connection.type == Connection.NONE) {
+        $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+        }
+      }
+
     $('#search').hide();
     $('#home').show();
 
@@ -352,6 +360,11 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     // };
   })
   .controller('MemberCtrl', function($scope, $state, $localStorage, $http) {
+    if(window.Connection) {
+      if(navigator.connection.type == Connection.NONE) {
+        $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+        }
+      }
     $('#memberApproval').hide();
     $('#home').show();
 

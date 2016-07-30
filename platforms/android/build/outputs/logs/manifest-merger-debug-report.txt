@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.xml:2:1-35:12
+ADDED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.xml:2:98-140
 		INJECTED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.xml
@@ -140,3 +140,7 @@ ADDED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.x
 		ADDED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.xml:34:58-82
 	android:name
 		ADDED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.xml:34:19-57
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.xml:35:5-79
+	android:name
+		ADDED from /Users/estalaf/Desktop/estalaf-ui/platforms/android/AndroidManifest.xml:35:22-76

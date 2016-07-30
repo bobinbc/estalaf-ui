@@ -1,6 +1,6 @@
 angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform,$rootScope) {
   $ionicPlatform.ready(function() {
     if (window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -11,11 +11,14 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
       // from snapping when text inputs are focused. Ionic handles this internally for
       // a much nicer keyboard experience.
       cordova.plugins.Keyboard.disableScroll(true);
+
     }
     if (window.StatusBar) {
       StatusBar.styleDefault();
     }
+
   });
+
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -37,18 +40,33 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
     })
     .state('create',{
       url:'/create',
+      cache: false,
       templateUrl:'templates/createClub.html',
       controller:'CreateCtrl'
     })
     .state('home',{
       url:'/home',
+      cache: false,
       templateUrl:'templates/home.html',
       controller:'HomeCtrl'
     })
     .state('addResource',{
       url:'/addResource',
+      cache: false,
       templateUrl:'templates/addResource.html',
       controller:'AddResCtrl'
+    })
+    .state('searchResource',{
+      url:'/searchResource',
+      cache: false,
+      templateUrl:'templates/searchResource.html',
+      controller:'SearchResCtrl'
+    })
+    .state('member',{
+      url:'/member',
+      cache: false,
+      templateUrl:'templates/member.html',
+      controller:'MemberCtrl'
     });
   $urlRouterProvider.otherwise('/register');
 });

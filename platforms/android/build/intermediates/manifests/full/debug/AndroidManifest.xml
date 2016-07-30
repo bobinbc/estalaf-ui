@@ -25,6 +25,8 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon"

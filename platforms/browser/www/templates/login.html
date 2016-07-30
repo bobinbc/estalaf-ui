@@ -1,35 +1,35 @@
-<ion-view view-title="Login" name="login-view">
+<ion-view hide-nav-bar="true">
 
-    <div class="row" id="loginHeader">
-      <div>Estalaf</div>
+  <div class="row" id="loginHeader">
+    <div class="col col-offset-33" id="logo">Estalaf</div>
+  </div>
+  <form name="loginForm" ng-submit="loginForm.$valid && signIn()" novalidate>
+    <div class="list list-inset">
+      <label class="item item-input" ng-class="{fail:(loginForm.userEmail.$dirty && loginForm.userEmail.$invalid) || (loginForm.userEmail.$pristine && loginForm.$submitted),success:loginForm.userEmail.$dirty && loginForm.userEmail.$valid}">
+        <input type="email" placeholder="Email" name="userEmail" id="inputUser" ng-model="email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
+        <i class="ion-checkmark-circled padding-horizontal" ng-show="(loginForm.userEmail.$dirty && loginForm.userEmail.$valid)" id="userSuccess"></i><i class="ion-close-circled error padding-horizontal" ng-show="(loginForm.userEmail.$dirty && loginForm.userEmail.$invalid)||(loginForm.userEmail.$pristine && loginForm.$submitted)"
+            id="userFail"></i>
+      </label>
     </div>
-    <form name="loginForm" ng-submit="loginForm.$valid && signIn()" novalidate>
-      <div class="list list-inset padding-horizontal">
-        <label class="item item-input" ng-class="{fail:(loginForm.userEmail.$dirty && loginForm.userEmail.$invalid) || (loginForm.userEmail.$pristine && loginForm.$submitted),success:loginForm.userEmail.$dirty && loginForm.userEmail.$valid}">
-          <input type="email" placeholder="Email" name="userEmail" id="inputUser" ng-model="email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
-          <i class="ion-checkmark-circled padding-horizontal" ng-show="(loginForm.userEmail.$dirty && loginForm.userEmail.$valid)" id="userSuccess"></i><i class="ion-close-circled error padding-horizontal" ng-show="(loginForm.userEmail.$dirty && loginForm.userEmail.$invalid)||(loginForm.userEmail.$pristine && loginForm.$submitted)"
-              id="userFail"></i>
-        </label>
-      </div>
-      <div class="list list-inset padding-horizontal">
-        <label class="item item-input" ng-class="{fail:(loginForm.userPassword.$dirty && loginForm.userPassword.$invalid)||(loginForm.userPassword.$pristine && loginForm.$submitted),success:loginForm.userPassword.$dirty && loginForm.userPassword.$valid}">
-          <input type="password" name="userPassword" ng-model="password" placeholder="Password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
-          <i class="ion-checkmark-circled padding-horizontal" ng-show="loginForm.userPassword.$dirty && loginForm.userPassword.$valid" id="passSuccess"></i><i class="ion-close-circled error padding-horizontal" ng-show="(loginForm.userPassword.$dirty && loginForm.userPassword.$invalid)||(loginForm.userPassword.$pristine && loginForm.$submitted)"
-              id="passFail"></i>
-        </label>
-      </div>
-      <div class="padding">
-        <button class="button button-block button-positive loginButton"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Sign In
-        </button>
-      </div>
-    </form>
-    <div class="row">
-      <div class="col col-offset-50">OR</div>
+    <div class="list list-inset">
+      <label class="item item-input" ng-class="{fail:(loginForm.userPassword.$dirty && loginForm.userPassword.$invalid)||(loginForm.userPassword.$pristine && loginForm.$submitted),success:loginForm.userPassword.$dirty && loginForm.userPassword.$valid}">
+        <input type="password" name="userPassword" ng-model="password" placeholder="Password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
+        <i class="ion-checkmark-circled padding-horizontal" ng-show="loginForm.userPassword.$dirty && loginForm.userPassword.$valid" id="passSuccess"></i><i class="ion-close-circled error padding-horizontal" ng-show="(loginForm.userPassword.$dirty && loginForm.userPassword.$invalid)||(loginForm.userPassword.$pristine && loginForm.$submitted)"
+            id="passFail"></i>
+      </label>
     </div>
-
-    <div class="row padding-top padding-horizontal">
-      <button class="button button-block button-positive"><i class="fa fa-google fa-lg" aria-hidden="true"></i> Sign In with Google
+    <div class="padding">
+      <button class="button button-block button-positive loginButton"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Sign In
       </button>
     </div>
+  </form>
+  <div class="row">
+    <div class="col col-offset-50">OR</div>
+  </div>
+
+  <div class="row padding-top padding-horizontal">
+    <button class="button button-block button-positive"><i class="fa fa-google fa-lg" aria-hidden="true"></i> Sign In with Google
+    </button>
+  </div>
 
 </ion-view>

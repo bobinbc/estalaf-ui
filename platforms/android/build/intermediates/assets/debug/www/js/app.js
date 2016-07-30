@@ -1,8 +1,15 @@
 angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
 
-.run(function($ionicPlatform,$rootScope) {
+.run(function($ionicPlatform,$rootScope,$cordovaToast) {
   $ionicPlatform.ready(function() {
-    if (window.cordova && window.cordova.plugins.Keyboard) {
+    // Check for network connection
+    if(window.Connection) {
+      if(navigator.connection.type == Connection.NONE) {
+        $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+        }
+      }
+
+  if (window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
@@ -16,11 +23,8 @@ angular.module('estalaf', ['ionic','estalaf.controllers','ngCordova'])
     if (window.StatusBar) {
       StatusBar.styleDefault();
     }
-
   });
-
 })
-
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
   .state('register', {
