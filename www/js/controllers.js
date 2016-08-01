@@ -150,25 +150,44 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         if (data.success == true) {
           $.each(data.clubUsers, function(k, v) {
             if (v.Clubs.length == 1) {
+              $("#showAdminIcon").hide();
               $('#clubsDropDown').hide();
               $('#clubTextfield').show();
 
               $.each(v.Clubs, function(k, v) {
                 var name = v.CLUB_NAME;
-                $("#clubNameDisplay").html(name);
                 $('#clubName').html(name);
-              });
+                if(v.Club_User.ROLE== "ADMIN"){
+                  document.getElementById('displayName').value=name;
+                  $("#showAdminIcon").show();
+                  $("#displayName").css('color','#9900ff');
+                }
+                else if(v.Club_User.ROLE== "PENDING-MEMBER"){
+                   document.getElementById('displayName').value=name;
+                   $("#showAdminIcon").hide();
+                   $("#displayName").css('color','#A9A9A9');
+                }
+                 else if(v.Club_User.ROLE== "MEMBER"){
+                   document.getElementById('displayName').value=name;
+                   $("#showAdminIcon").hide();
+                   $("#displayName").css('color','black');
+                 }
+               });
             } else if (v.Clubs.length > 1) {
+              $("#showIcon").hide();
               $('#clubsDropDown').show();
               $('#clubTextfield').hide();
+              $("#clubs").css('color','black');
               $("#clubs").append(
                 $('<option value="Select Club" selected> ' + "Select Club" + '</option>')
               );
               $.each(v.Clubs, function(k, v) {
+                console.log(  location.clubId);
                 if (v.Club_User.ROLE == "ADMIN") {
                   $("#clubs").append(
-                    $('<option value="' + v.Club_User.ROLE + ',' + v.CLUB_ID + '"> ' + "A\t" + v.CLUB_NAME + '</option>')
+                    $('<option value="' + v.Club_User.ROLE + ',' + v.CLUB_ID + '" >' + v.CLUB_NAME + '</option>')
                   );
+
                 } else if (v.Club_User.ROLE == "PENDING-MEMBER") {
 
                   $("#clubs").append(
@@ -190,27 +209,34 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     });
 
     $('#clubs').on('change', function() {
+      $('#showIcon').hide();
       var role1 = this.value;
       var role2 = role1.split(",");
       var role = role2.shift();
       var name = $('#clubs :selected').text();
       $("#clubName").text(name);
+      $("#clubs").css('color','black');
 
       if (role == "Select club") {
+        $('#showIcon').hide();
         $('#range').hide();
         $('#or').hide();
         $('#hideClick').hide();
         $('#memberApproval').hide();
         $('#search').hide();
+
 
       } else if (role == "PENDING-MEMBER") {
+        $('#showIcon').hide();
         $('#range').hide();
         $('#or').hide();
         $('#hideClick').hide();
         $('#memberApproval').hide();
         $('#search').hide();
+         $("#clubs").css('color','#A9A9A9');
 
       } else if (role == "ADMIN") {
+        $('#showIcon').show();
         var val = this.value;
         var val1 = val.split(",");
         var id = val1.pop();
@@ -220,13 +246,17 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         $('#hideClick').show();
         $('#memberApproval').show();
         $('#search').show();
+        $("#clubs").css('color','#9900ff');
+
 
       } else if (role == "MEMBER") {
+        $('#showIcon').hide();
         $('#range').hide();
         $('#or').hide();
         $('#hideClick').hide();
         $('#memberApproval').hide();
         $('#search').show();
+        $("#clubs").css('color','black');
       }
     });
     $scope.scanBarcode = function() {
@@ -318,6 +348,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     };
     $http.get('https://estalaf-production.herokuapp.com/resources?clubId=' + $localStorage.id, config).success(function(data) {
       $.each(data.resources, function(k, v) {
+        console.log(v);
         if (data.resources.length > 0) {
           $('#noMember').hide();
           $scope.items.push({

@@ -33,14 +33,15 @@
         </ion-nav-buttons>
 
         <label class="item item-input item-select" id="clubsDropDown">
-          <div class="input-label">
-            &nbsp;
-          </div>
-          <select id="clubs">
-          </select>
+          <i id="showIcon" class="fa fa-user-secret fa-lg" aria-hidden="true"></i>
+          <select id="clubs"></select>
         </label>
-        <div id="clubTextfield">
-          <h1 class="title"><font class='bold' id="clubNameDisplay"></font></h1></div>
+
+          <label class="item item-input" id="clubTextfield">
+            <i id="showAdminIcon" class="fa fa-user-secret fa-lg" aria-hidden="true"></i>
+            <input type="text" id="displayName" readonly>
+          </label>
+
       </ion-nav-bar>
       <ion-nav-view>
 
@@ -51,7 +52,8 @@
       <ion-header-bar class="bar-positive">
 
         <div>
-          <h1 class="title"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> <font class='bold' id="clubName"></font></h1></div>
+          <h1 class="title"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> <font class='bold' id="clubName"></font></h1>
+        </div>
 
       </ion-header-bar>
       <ion-content>

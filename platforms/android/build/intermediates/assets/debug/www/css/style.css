@@ -2,7 +2,29 @@
 #clubsDropDown{
   position: fixed;
 }
+
+#clubs{
+    font-weight: bold;
+    padding-left: 24%;
+}
+
+/*This is to diplay the text box*/
+#clubTextfield{
+    z-index: 1000;
+    margin-left: 18%;
+    width: 250px;
+    height:45px;
+}
+
+#showIcon{
+  z-index:1000;
+}
+
 /*end of index page*/
+#displayName{
+  font-weight:bold;
+  padding-left: 24%
+}
 
 /*Registration Template*/
 
