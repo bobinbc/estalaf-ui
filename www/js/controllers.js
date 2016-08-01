@@ -156,21 +156,29 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
 
               $.each(v.Clubs, function(k, v) {
                 var name = v.CLUB_NAME;
+                $localStorage.clubId=v.CLUB_ID;
                 $('#clubName').html(name);
+
                 if(v.Club_User.ROLE== "ADMIN"){
+                  $localStorage.id =v.CLUB_ID;
                   document.getElementById('displayName').value=name;
                   $("#showAdminIcon").show();
                   $("#displayName").css('color','#9900ff');
+                  $('#memberApproval').show();
+                  $('#search').show();
                 }
                 else if(v.Club_User.ROLE== "PENDING-MEMBER"){
                    document.getElementById('displayName').value=name;
                    $("#showAdminIcon").hide();
                    $("#displayName").css('color','#A9A9A9');
+                   $('#memberApproval').hide();
+                   $('#search').hide();
                 }
                  else if(v.Club_User.ROLE== "MEMBER"){
                    document.getElementById('displayName').value=name;
                    $("#showAdminIcon").hide();
                    $("#displayName").css('color','black');
+                   $('#search').show();
                  }
                });
             } else if (v.Clubs.length > 1) {
@@ -182,7 +190,6 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
                 $('<option value="Select Club" selected> ' + "Select Club" + '</option>')
               );
               $.each(v.Clubs, function(k, v) {
-                console.log(  location.clubId);
                 if (v.Club_User.ROLE == "ADMIN") {
                   $("#clubs").append(
                     $('<option value="' + v.Club_User.ROLE + ',' + v.CLUB_ID + '" >' + v.CLUB_NAME + '</option>')
@@ -196,7 +203,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
                 } else if (v.Club_User.ROLE == "MEMBER") {
 
                   $("#clubs").append(
-                    $('<option value="' + v.Club_User.ROLE + '">' + v.CLUB_NAME + '</option>')
+                    $('<option value="' + v.Club_User.ROLE + ',' + v.CLUB_ID + '">' + v.CLUB_NAME + '</option>')
                   );
                 }
 
@@ -212,6 +219,8 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
       $('#showIcon').hide();
       var role1 = this.value;
       var role2 = role1.split(",");
+      var clubid=role2.pop();
+      $localStorage.clubId=clubid;
       var role = role2.shift();
       var name = $('#clubs :selected').text();
       $("#clubName").text(name);
@@ -346,9 +355,8 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         'token': $localStorage.token
       }
     };
-    $http.get('https://estalaf-production.herokuapp.com/resources?clubId=' + $localStorage.id, config).success(function(data) {
+    $http.get('https://estalaf-production.herokuapp.com/resources?clubId=' + $localStorage.clubId, config).success(function(data) {
       $.each(data.resources, function(k, v) {
-        console.log(v);
         if (data.resources.length > 0) {
           $('#noMember').hide();
           $scope.items.push({
