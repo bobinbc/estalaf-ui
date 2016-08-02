@@ -6,6 +6,10 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         $cordovaToast.show('No Internet Connection', 'long', 'bottom');
       }
     }
+    // if($localStorage.token == 'undefined'){
+    //   $state.go('home');
+    // }
+    // else{
     $scope.signIn = function() {
       $.ajax({
         type: 'POST',
@@ -24,11 +28,13 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         }
       });
     }
+  // }
   })
   .controller('RegisterCtrl', function($scope, $location, $ionicPopup, $state, $localStorage) {
     $scope.loginPage = function(path) {
       $location.path(path);
     };
+
     $scope.regSubmit = function() {
       // This is to get the check whether the first alphabet of the first name is capitol,
       // if not will convert it into capitol
@@ -102,6 +108,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     }
     $('#memberApproval').hide();
     $('#home').show();
+    $('#create').hide();
     $scope.createClub = function() {
       $.ajax({
         type: 'POST',
@@ -121,7 +128,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
       });
     };
   })
-  .controller('HomeCtrl', function($scope, $filter, $location, $cordovaToast, $cordovaBarcodeScanner, $ionicSideMenuDelegate, $state, $localStorage, $window) {
+  .controller('HomeCtrl', function($scope, $filter, $location, $cordovaToast, $cordovaBarcodeScanner, $state, $localStorage, $window) {
     $('#range').hide();
     $('#or').hide();
     $('#hideClick').hide();
@@ -130,6 +137,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     $('#clubName').html('Select Club');
     $('#clubs').empty();
     $('#search').hide();
+    $('#create').show();
     if (window.Connection) {
       if (navigator.connection.type == Connection.NONE) {
         $cordovaToast.show('No Internet Connection', 'long', 'bottom');
@@ -149,28 +157,41 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
       success: function(data, status) {
         if (data.success == true) {
           $.each(data.clubUsers, function(k, v) {
-            if (v.Clubs.length == 1) {
+            console.log(v.Clubs.length );
+            if(v.Clubs.length == 0){
+              $('#clubsDropDown').hide();
+              $('#clubTextfield').hide();
+            }
+            else if (v.Clubs.length == 1) {
               $("#showAdminIcon").hide();
               $('#clubsDropDown').hide();
               $('#clubTextfield').show();
 
               $.each(v.Clubs, function(k, v) {
                 var name = v.CLUB_NAME;
+                $localStorage.clubId=v.CLUB_ID;
                 $('#clubName').html(name);
+
                 if(v.Club_User.ROLE== "ADMIN"){
+                  $localStorage.id =v.CLUB_ID;
                   document.getElementById('displayName').value=name;
                   $("#showAdminIcon").show();
-                  $("#displayName").css('color',' #9900ff');
+                  $("#displayName").css('color','#9900ff');
+                  $('#memberApproval').show();
+                  $('#search').show();
                 }
                 else if(v.Club_User.ROLE== "PENDING-MEMBER"){
                    document.getElementById('displayName').value=name;
                    $("#showAdminIcon").hide();
                    $("#displayName").css('color','#A9A9A9');
+                   $('#memberApproval').hide();
+                   $('#search').hide();
                 }
                  else if(v.Club_User.ROLE== "MEMBER"){
                    document.getElementById('displayName').value=name;
                    $("#showAdminIcon").hide();
                    $("#displayName").css('color','black');
+                   $('#search').show();
                  }
                });
             } else if (v.Clubs.length > 1) {
@@ -195,7 +216,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
                 } else if (v.Club_User.ROLE == "MEMBER") {
 
                   $("#clubs").append(
-                    $('<option value="' + v.Club_User.ROLE + '">' + v.CLUB_NAME + '</option>')
+                    $('<option value="' + v.Club_User.ROLE + ',' + v.CLUB_ID + '">' + v.CLUB_NAME + '</option>')
                   );
                 }
 
@@ -211,6 +232,8 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
       $('#showIcon').hide();
       var role1 = this.value;
       var role2 = role1.split(",");
+      var clubid=role2.pop();
+      $localStorage.clubId=clubid;
       var role = role2.shift();
       var name = $('#clubs :selected').text();
       $("#clubName").text(name);
@@ -245,7 +268,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         $('#hideClick').show();
         $('#memberApproval').show();
         $('#search').show();
-        $("#clubs").css('color',' #9900ff');
+        $("#clubs").css('color','#9900ff');
 
 
       } else if (role == "MEMBER") {
@@ -260,26 +283,25 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     });
     $scope.scanBarcode = function() {
       $cordovaBarcodeScanner.scan().then(function(imageData) {
-        var n = imageData.text;
-        // $scope.resourceId = n;
-        // alert(n);
-        // $state.go('addResource');
+        var n =imageData.text;
+        $localStorage.scan=n;
+        $state.go('scanResource');
 
 
-        alert("format" + imageData.text);
+        // alert("format" + imageData.text);
       }, function(error) {
         //  console.log("An Error: " + error);
       });
     };
-    $scope.toggleLeft = function() {
-      $ionicSideMenuDelegate.toggleLeft();
-    };
+    // $scope.toggleLeft = function() {
+    //   $ionicSideMenuDelegate.toggleLeft();
+    // };
     $scope.addResource = function() {
       $state.go('addResource');
     };
-    $scope.toggleChange = function() {
-      console.log("hi");
-    }
+    // $scope.toggleChange = function() {
+    //
+    // };
   })
   .controller('AddResCtrl', function($scope, $state, $localStorage) {
     if (window.Connection) {
@@ -289,6 +311,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     }
     $('#memberApproval').hide();
     $('#home').show();
+    $('#create').show();
 
     $scope.numberPickerObject = {
       inputValue: 0,
@@ -329,7 +352,58 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
       });
     }
   })
-  .controller('SearchResCtrl', function($scope, $state, $localStorage, $http) {
+  .controller('ScanResCtrl', function($scope, $state, $localStorage) {
+    if (window.Connection) {
+      if (navigator.connection.type == Connection.NONE) {
+        $cordovaToast.show('No Internet Connection', 'long', 'bottom');
+      }
+    }
+    $('#memberApproval').hide();
+    $('#home').show();
+    $('#create').show();
+
+    $scope.resourceCode=$localStorage.scan;
+    $scope.numberPickerObject = {
+      inputValue: 0,
+      minValue: 1,
+      maxValue: 50,
+      precision: 1,
+      format: "WHOLE",
+      titleLabel: 'Quantity',
+      setLabel: 'Set',
+      closeLabel: 'Close',
+      setButtonType: 'button-positive',
+      closeButtonType: 'button-stable',
+      callback: function(val) {
+        $scope.quantityNo = val;
+      }
+    };
+
+    $scope.scanResource = function() {
+      $.ajax({
+        type: 'POST',
+        url: 'https://estalaf-production.herokuapp.com/resources',
+        data: {
+          'resourceName': $scope.resourceName,
+          'resourceDescription': $scope.resourceDescription,
+          'resourceCode': $scope.resourceCode,
+          'clubId': $localStorage.id,
+          'manual': false,
+          'resourceQuantity': $scope.quantityNo,
+          'token': $localStorage.token
+        },
+        success: function(data, status) {
+          if (data.success == true) {
+            $state.go('home');
+          } else if (data.success == false) {
+            console.log("fail");
+          }
+        }
+      });
+    }
+  })
+  .controller('SearchResCtrl', function($scope, $state, $localStorage, $http,$ionicHistory) {
+     console.log("hi");
     if (window.Connection) {
       if (navigator.connection.type == Connection.NONE) {
         $cordovaToast.show('No Internet Connection', 'long', 'bottom');
@@ -338,6 +412,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
 
     $('#search').hide();
     $('#home').show();
+    $('#create').show();
 
     $scope.items = [];
     var config = {
@@ -345,7 +420,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         'token': $localStorage.token
       }
     };
-    $http.get('https://estalaf-production.herokuapp.com/resources?clubId=' + $localStorage.id, config).success(function(data) {
+    $http.get('https://estalaf-production.herokuapp.com/resources?clubId=' + $localStorage.clubId, config).success(function(data) {
       $.each(data.resources, function(k, v) {
         if (data.resources.length > 0) {
           $('#noMember').hide();
@@ -396,6 +471,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     }
     $('#memberApproval').hide();
     $('#home').show();
+    $('#create').show();
 
     $scope.items = [];
     var config = {
@@ -456,4 +532,167 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         }
       });
     };
+  })
+  .controller('SignOutCtrl',function($scope, $state,$localStorage,$ionicHistory,$window){
+   $state.go('login');
+   $window.localStorage.clear();
+    $ionicHistory.clearHistory();
+  })
+  .controller('UpdateCtrl',function($scope,$state){
+    $('#clubsDropDown').hide();
+    $('#clubTextfield').hide();
+    $('#home').show();
+
+    $scope.updateSubmit=function(){
+      $.ajax({
+        type:'POST',
+        url:'https://estalaf-production.herokuapp.com/users',
+        data:{
+          'firstName':$scope.firstName,
+          'lastName':$scope.lastName,
+          'email':$scope.email,
+          'password':$scope.password
+        },
+        success:function(data,status){
+        if(data.success == true){
+            $cordovaToast.show('successfully Updated', 'long', 'bottom');
+            $state.go('login');
+        }
+        }
+      });
+    }
   });
+  // .controller('dropDownCtrl',function($scope,$state,$localStorage,$ionicSideMenuDelegate){
+  //   $.ajax({
+  //     type: 'GET',
+  //     url: 'https://estalaf-production.herokuapp.com/clubs/users',
+  //     headers: {
+  //       'token': $localStorage.token
+  //     },
+  //     success: function(data, status) {
+  //       if (data.success == true) {
+  //         $.each(data.clubUsers, function(k, v) {
+  //           console.log(v.Clubs.length );
+  //          if (v.Clubs.length == 1) {
+  //             $("#showAdminIcon").hide();
+  //             $('#clubsDropDown').hide();
+  //             $('#clubTextfield').show();
+  //
+  //             $.each(v.Clubs, function(k, v) {
+  //               var name = v.CLUB_NAME;
+  //               $localStorage.clubId=v.CLUB_ID;
+  //               $('#clubName').html(name);
+  //
+  //               if(v.Club_User.ROLE== "ADMIN"){
+  //                 $localStorage.id =v.CLUB_ID;
+  //                 document.getElementById('displayName').value=name;
+  //                 $("#showAdminIcon").show();
+  //                 $("#displayName").css('color','#9900ff');
+  //                 $('#memberApproval').show();
+  //                 $('#search').show();
+  //               }
+  //               else if(v.Club_User.ROLE== "PENDING-MEMBER"){
+  //                  document.getElementById('displayName').value=name;
+  //                  $("#showAdminIcon").hide();
+  //                  $("#displayName").css('color','#A9A9A9');
+  //                  $('#memberApproval').hide();
+  //                  $('#search').hide();
+  //               }
+  //                else if(v.Club_User.ROLE== "MEMBER"){
+  //                  document.getElementById('displayName').value=name;
+  //                  $("#showAdminIcon").hide();
+  //                  $("#displayName").css('color','black');
+  //                  $('#search').show();
+  //                }
+  //              });
+  //           } else if (v.Clubs.length > 1) {
+  //             $("#showIcon").hide();
+  //             $('#clubsDropDown').show();
+  //             $('#clubTextfield').hide();
+  //             $("#clubs").css('color','black');
+  //             $("#clubs").append(
+  //               $('<option value="Select Club" selected> ' + "Select Club" + '</option>')
+  //             );
+  //             $.each(v.Clubs, function(k, v) {
+  //               if (v.Club_User.ROLE == "ADMIN") {
+  //                 $("#clubs").append(
+  //                   $('<option value="' + v.Club_User.ROLE + ',' + v.CLUB_ID + '" >' + v.CLUB_NAME + '</option>')
+  //                 );
+  //
+  //               } else if (v.Club_User.ROLE == "PENDING-MEMBER") {
+  //
+  //                 $("#clubs").append(
+  //                   $('<option  value="' + v.Club_User.ROLE + '">' + "P\t" + v.CLUB_NAME + '</option>')
+  //                 );
+  //               } else if (v.Club_User.ROLE == "MEMBER") {
+  //
+  //                 $("#clubs").append(
+  //                   $('<option value="' + v.Club_User.ROLE + ',' + v.CLUB_ID + '">' + v.CLUB_NAME + '</option>')
+  //                 );
+  //               }
+  //
+  //             });
+  //           }
+  //
+  //         });
+  //       }
+  //     }
+  //   });
+  //
+  //   $('#clubs').on('change', function() {
+  //     $('#showIcon').hide();
+  //     var role1 = this.value;
+  //     var role2 = role1.split(",");
+  //     var clubid=role2.pop();
+  //     $localStorage.clubId=clubid;
+  //     var role = role2.shift();
+  //     var name = $('#clubs :selected').text();
+  //     $("#clubName").text(name);
+  //     $("#clubs").css('color','black');
+  //
+  //     if (role == "Select club") {
+  //       $('#showIcon').hide();
+  //       $('#range').hide();
+  //       $('#or').hide();
+  //       $('#hideClick').hide();
+  //       $('#memberApproval').hide();
+  //       $('#search').hide();
+  //
+  //
+  //     } else if (role == "PENDING-MEMBER") {
+  //       $('#showIcon').hide();
+  //       $('#range').hide();
+  //       $('#or').hide();
+  //       $('#hideClick').hide();
+  //       $('#memberApproval').hide();
+  //       $('#search').hide();
+  //        $("#clubs").css('color','#A9A9A9');
+  //
+  //     } else if (role == "ADMIN") {
+  //       $('#showIcon').show();
+  //       var val = this.value;
+  //       var val1 = val.split(",");
+  //       var id = val1.pop();
+  //       $localStorage.id = id;
+  //       $('#range').show();
+  //       $('#or').show();
+  //       $('#hideClick').show();
+  //       $('#memberApproval').show();
+  //       $('#search').show();
+  //       $("#clubs").css('color','#9900ff');
+  //
+  //
+  //     } else if (role == "MEMBER") {
+  //       $('#showIcon').hide();
+  //       $('#range').hide();
+  //       $('#or').hide();
+  //       $('#hideClick').hide();
+  //       $('#memberApproval').hide();
+  //       $('#search').show();
+  //       $("#clubs").css('color','black');
+  //     }
+  //   });
+  //   $scope.toggleLeft = function() {
+  //     $ionicSideMenuDelegate.toggleLeft();
+  //   };
+// });

@@ -254,7 +254,7 @@ padding-left:18%;
 	height: 0;
   margin-top:17px;
 	border-top: 15px solid transparent;
-	border-right: 30px solid #ef473a;
+	border-right: 30px solid #d9534f;
 	border-bottom: 15px solid transparent;
 
 }
@@ -293,5 +293,15 @@ padding-left:18%;
 
 #textfield{
   height:47px !important;
+}
+/*end*/
+/*update profile template*/
+img{
+  width:128px;
+  height:128px;
+}
+
+#profilePic{
+  padding:15% 5% 0%;
 }
 /*end*/

@@ -1,0 +1,38 @@
+<ion-view style="margin-top:10%">
+  <form name="addResourceForm" ng-submit="scanResource()">
+
+    <div class="list list-inset" id="addResource">
+      <label class="item item-input">
+        <input type="text" placeholder="Resource code" ng-model="resourceCode"  required>
+      </label>
+    </div>
+
+    <div class="padding">
+      <label class="item item-input">
+        <input type="text" placeholder="Resource Name" ng-model="resourceName" required>
+      </label>
+    </div>
+
+    <div class="padding-top padding-horizontal" id="qTextField">
+      <div class="item item-input" id="textfield">
+        <input type="number" placeholder="Quantity" ng-model="quantityNo" required>
+        <ionic-numberpicker input-obj="numberPickerObject">
+          <button class="button button-positive order-button">
+            <i class="fa fa-list-ol" aria-hidden="true"></i>
+          </button>
+        </ionic-numberpicker>&nbsp;
+      </div>
+    </div>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <textarea placeholder="Description" rows="10" ng-model="resourceDescription" required>
+        </textarea>
+      </label>
+    </div>
+
+    <div class="padding">
+      <button class="button button-block button-positive"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Add Resources</button>
+    </div>
+  </form>
+</ion-view>

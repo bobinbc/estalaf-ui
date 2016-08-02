@@ -29,6 +29,7 @@ angular.module('estalaf', ['ionic', 'estalaf.controllers', 'ngCordova'])
     $stateProvider
       .state('register', {
         url: '/register',
+        cache: false,
         templateUrl: 'templates/register.html',
         controller: 'RegisterCtrl'
       })
@@ -39,6 +40,7 @@ angular.module('estalaf', ['ionic', 'estalaf.controllers', 'ngCordova'])
       })
       .state('joinClub', {
         url: '/joinClub',
+        cache: false,
         templateUrl: 'templates/joinClub.html',
         controller: 'JoinCtrl'
       })
@@ -60,6 +62,12 @@ angular.module('estalaf', ['ionic', 'estalaf.controllers', 'ngCordova'])
         templateUrl: 'templates/addResource.html',
         controller: 'AddResCtrl'
       })
+      .state('scanResource', {
+        url: '/scanResource',
+        cache: false,
+        templateUrl: 'templates/scanResource.html',
+        controller: 'ScanResCtrl'
+      })
       .state('searchResource', {
         url: '/searchResource',
         cache: false,
@@ -71,6 +79,21 @@ angular.module('estalaf', ['ionic', 'estalaf.controllers', 'ngCordova'])
         cache: false,
         templateUrl: 'templates/member.html',
         controller: 'MemberCtrl'
+      })
+      .state('signOut',{
+        url:'/signOut',
+        cache: false,
+        controller:'SignOutCtrl'
+      })
+      // .state('dropDown',{
+      //   url:'/dropDown',
+      //   controller:'dropDownC'
+      // })
+      .state('update', {
+        url: '/update',
+        cache: false,
+        templateUrl: 'templates/updateProfile.html',
+        controller: 'UpdateCtrl'
       });
     $urlRouterProvider.otherwise('/register');
   });
