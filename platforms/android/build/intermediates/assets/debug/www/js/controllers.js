@@ -284,10 +284,48 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     $scope.scanBarcode = function() {
       $cordovaBarcodeScanner.scan().then(function(imageData) {
         var n =imageData.text;
+        // var n="nithin";
+
+        if(n==""){
+          alert("Please Scan again");
+        }
+        else{
+          if($scope.toggle)
+          {
+            $.ajax({
+              type:'POST',
+              url:'https://estalaf-production.herokuapp.com/resources/users',
+              headers: {
+                'token': $localStorage.token
+              },
+              data:{
+                'clubId': $localStorage.clubId ,
+                'resourceCode':n
+              },
+                success: function(data, status) {
+                  alert(data.message);
+                  alert(status);
+                  if(data.success== true){
+                    alert(data);
+                  }
+                  else{
+                    alert("error");
+                  }
+
+
+                  // console.log(data);
+                }
+              });
+
+
+
+          }
+          else{
+
         $localStorage.scan=n;
         $state.go('scanResource');
-
-
+}
+      }
         // alert("format" + imageData.text);
       }, function(error) {
         //  console.log("An Error: " + error);
@@ -344,6 +382,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         },
         success: function(data, status) {
           if (data.success == true) {
+            $cordovaToast.show('No Internet Connection', 'long', 'bottom');
             $state.go('home');
           } else if (data.success == false) {
             console.log("fail");
@@ -394,6 +433,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         },
         success: function(data, status) {
           if (data.success == true) {
+            $cordovaToast.show('Item added Succesfully', 'long', 'bottom');
             $state.go('home');
           } else if (data.success == false) {
             console.log("fail");

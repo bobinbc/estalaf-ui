@@ -94,6 +94,13 @@ angular.module('estalaf', ['ionic', 'estalaf.controllers', 'ngCordova'])
         cache: false,
         templateUrl: 'templates/updateProfile.html',
         controller: 'UpdateCtrl'
+      })
+      .state('view', {
+        url: '/view',
+        cache: false,
+        templateUrl: 'templates/viewResource.html',
+        controller: 'viewCtrl'
       });
+
     $urlRouterProvider.otherwise('/register');
   });
