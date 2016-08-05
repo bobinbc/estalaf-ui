@@ -589,7 +589,8 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
    var obj=$localStorage.selectedResource;
     $scope.resCode = obj.id;
     $scope.borrowStatus = obj.borrowValue;
-    $scope.resCode = obj.id;
+    $scope.resName = obj.name;
+    $scope.resDescription = obj.description;
 
     $scope.viewResource=function(){
       $.ajax({
