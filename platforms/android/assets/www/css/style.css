@@ -304,4 +304,10 @@ img{
 #profilePic{
   padding:15% 5% 0%;
 }
+
+.item-available{
+    color: green;
+    font-size: 30px !important;
+    text-align: center;    
+}
 /*end*/

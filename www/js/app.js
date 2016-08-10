@@ -1,4 +1,4 @@
-angular.module('estalaf', ['ionic', 'estalaf.controllers', 'ngCordova'])
+angular.module('estalaf', ['ionic', 'estalaf.controllers', 'ngCordova','ngStorage'])
 
 .run(function ($ionicPlatform, $rootScope, $cordovaToast) {
         $ionicPlatform.ready(function () {
@@ -35,6 +35,7 @@ angular.module('estalaf', ['ionic', 'estalaf.controllers', 'ngCordova'])
             })
             .state('login', {
                 url: '/login',
+                cache: false,
                 templateUrl: 'templates/login.html',
                 controller: 'LoginCtrl'
             })
