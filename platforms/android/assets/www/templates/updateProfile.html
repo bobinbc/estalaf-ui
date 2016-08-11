@@ -5,20 +5,20 @@
   <form name="updateForm" ng-submit="updateForm.$valid && updateSubmit()" novalidate>
     <!--This is the textbox for firstname-->
     <div class="list list-inset">
-      <label class="item item-input" ng-class="{regfail:(updateForm.updateFirstname.$invalid)||(updateForm.$submitted),regsuccess:updateForm.updateFirstname.$valid}">
+      <label class="item item-input">
         <input type="text" placeholder="First Name" name="updateFirstname" class="input" ng-model="firstName" ng-pattern="/^[a-zA-Z]*$/" required>
       </label>
     </div>
     <!--This is the text box for last name-->
     <div class="list list-inset">
-      <label class="item item-input item-floating-label" ng-class="{regfail:( updateForm.updateLastname.$invalid)||( updateForm.$submitted),regsuccess: updateForm.updateLastname.$valid}">
+      <label class="item item-input item-floating-label">
         <input type="text" placeholder="Last Name" name="updateLastname" class="input" ng-model="lastName" ng-pattern="/^[a-zA-Z]*$/" required>
       </label>
     </div>
     <!--This is the text box for email-->
     <div class="list list-inset">
       <label class="item item-input item-floating-label">
-        <input type="text" placeholder="Old Password" name="updateEmail" class="input" ng-model="old" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" readonly>
+        <input type="text" placeholder="Email" name="updateEmail" class="input" ng-model="old" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
       </label>
     </div>
     <!--This is the textbox for new password-->

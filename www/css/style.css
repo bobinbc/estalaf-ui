@@ -267,6 +267,9 @@ padding-left:18%;
   padding: 0px 0px 0px 10px !important;
   height:72px;
 }
+#searchResoure{
+  padding: 0px !important;
+}
 
 #resources{
   width:300px;
@@ -305,6 +308,22 @@ img{
     color: green;
     font-size: 30px !important;
     text-align: center;
+  }
+
+  #searchresource{
+    height: 49px !important;
+    width: 85% !important;
+    padding: 5px !important;
+    border: 1px solid #ddd;
+    margin: 0px 5px 5px 2px;
+    border-radius: 10px;
+    float:right;
+  }
+
+  #searchIcon{
+    height: 55px;
+    padding: 12px;
+
   }
   /*end of view resource template*/
   /*end of file*/

@@ -1,14 +1,12 @@
 <!--This is the template for search resources-->
-<ion-view style="margin-top:9%">
+<ion-view style="margin-top:15%">
   <!--This is the list where we can see the resources of that club-->
-  <input type="text" placeholder="Search Text" name="searchTxt" class="input" ng-model="searchText">
-  <ion-scroll direction="xy" >
+  <input type="text" placeholder="Search" name="searchTxt" class="input" ng-model="searchText" ng-if="noMember > 0" id="searchresource"><i class="fa fa-search fa-lg" aria-hidden="true" id="searchIcon"></i>
   <ion-list show-delete="false" ng-repeat="item in items| filter: searchText">
     <ion-item class="item" id="searchResoure">
       <h2 id="resources" ng-click="reserve({{item}})"><i class="ion-filing" aria-hidden="true"></i>  <b>{{item.name}}</b></h2>
     </ion-item>
   </ion-list>
- </ion-scroll>
   <div class="card" ng-if="noMember <= 0">
     <div class="item item-text-wrap">
       <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i> <b>There are no resources added to this club</b>

@@ -21,6 +21,17 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         success: function(data, status) {
           if (data.success == true) {
             $localStorage.token = data.token.value;
+            $.ajax({
+              type: 'GET',
+              url: 'https://estalaf-production.herokuapp.com/clubs/users',
+              headers: {
+                'token': $localStorage.token
+              },
+              success:function(data,status){
+                console.log(data);
+                console.log($localStorage.token);
+              }
+            });
             $state.go('home');
           } else if (data.success == false) {
             $cordovaToast.show('Invalid Credentials', 'long', 'bottom')
@@ -221,7 +232,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
                 } else if (v.Club_User.ROLE == "PENDING-MEMBER") {
 
                   $("#clubs").append(
-                    $('<option  value="' + v.Club_User.ROLE + '">' + "P\t" + v.CLUB_NAME + '</option>')
+                    $('<option  value="' + v.Club_User.ROLE + '">' + v.CLUB_NAME +  "\t(P)"+'</option>')
                   );
                 } else if (v.Club_User.ROLE == "MEMBER") {
 
@@ -275,7 +286,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         $('#hideClick').show();
         $('#memberApproval').show();
         $('#search').show();
-        $("#clubs").css('color', '#9900ff');
+        $("#clubs").css('color', '#000');
 
 
       } else if (role == "MEMBER") {
@@ -299,7 +310,8 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         if (n == "") {
           alert("Please Scan again");
         } else {
-          if ($scope.toggle) {
+          if (!$scope.toggle || $scope.toggle == undefined) {
+
             $.ajax({
               type: 'POST',
               url: 'https://estalaf-production.herokuapp.com/resources/users',
@@ -311,12 +323,10 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
                 'resourceCode': n
               },
               success: function(data, status) {
-                alert(data.message);
-                alert(status);
                 if (data.success == true) {
-                  alert(data);
+                  alert(data.message);
                 } else {
-                  alert("error");
+                  alert("Please contact the admin");
                 }
               }
             });
@@ -330,6 +340,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     $scope.addResource = function() {
       $state.go('addResource');
     };
+
   })
   // This is the add resource controller
   .controller('AddResCtrl', function($scope, $state, $localStorage, $cordovaToast) {
@@ -368,7 +379,7 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         data: {
           'resourceName': $scope.resourceName,
           'resourceDescription': $scope.resourceDescription,
-          'resourceMCode': $scope.resourceId,
+          'resourceMCode': $scope.resourceCode,
           'clubId': $localStorage.id,
           'manual': true,
           'resourceQuantity': $scope.quantityNo,
@@ -459,24 +470,22 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
     // Here we are sending the club id and token to the server
     // if the callback is successful list of resources will be seen or else it will show the error messsage
     $scope.items = [];
+
     var config = {
       headers: {
         'token': $localStorage.token
       }
     };
     $http.get('https://estalaf-production.herokuapp.com/resources?clubId=' + $localStorage.clubId, config).success(function(data) {
+$scope.noMember = data.resources.length;
       $.each(data.resources, function(k, v) {
         if (data.resources.length > 0) {
-          $('#noMember').hide();
-          $scope.noMember;
           $scope.items.push({
             name: v.RESOURCE_NAME,
             id: v.RESOURCE_ID,
             description: v.RESOURCE_DESCRIPTION,
             borrowValue: v.RESOURCE_QUANTITY - v.RESOURCE_BORROWEDQUANTITY
           });
-        } else {
-          $('#noMember').show();
         }
       });
     });
@@ -618,12 +627,10 @@ angular.module('estalaf.controllers', ['ngStorage', 'ngCordova', 'ionic-numberpi
         },
         success: function(data, status) {
           $state.go('home');
-          alert(data.message);
-          alert(status);
           if (data.success == true) {
-            alert(data);
+            alert(data.message);
           } else {
-            alert("error");
+            alert("Please contact the admin");
           }
         }
       });
