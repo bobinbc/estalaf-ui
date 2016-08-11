@@ -15,7 +15,7 @@
     width: 250px;
     height:45px;
 }
-
+/*This is to diplay the text box*/
 #showIcon{
   z-index:1000;
 }
@@ -27,10 +27,11 @@
 }
 
 /*Registration Template*/
-
+/*This is the size of logo*/
 #logo {
   font-size: 30px;
 }
+/*This is space given for logo*/
 #head {
   height: 50px;
   margin-top: 20px;
@@ -55,16 +56,15 @@
 }
 
 /*end of validation for REgistration page*/
-
-
 /*End of Registration template*/
 
 
 /*Login Template*/
-
+/*This is the space given for head in login page*/
 #loginHeader {
   padding: 80px 0px;
 }
+
 .item.item-input.loginTextbox {
   border-radius: 20px;
   padding-left: 18px;
@@ -114,9 +114,8 @@
 }
 
 /*end of validation for login page*/
-
-
 /*end of login template*/
+
 .button::after {
   font-weight: 900;
   font-size: larger;
@@ -160,7 +159,7 @@
 
 
 /*Home page*/
-
+/*This is the place holder for toggle button*/
 #range{
   position: fixed;
   padding:20% 0% 10%;
@@ -180,9 +179,7 @@
 #name{
   padding-top: 2px;
 }
-/*.track{
-  margin-left:10px;
-}*/
+
 .handle{
   margin-left:30px;
 }
@@ -215,16 +212,13 @@ padding-left:18%;
 
 /*end of icon style*/
 
-
-/*home Page*/
-
 .p {
   margin-top: 30%;
   padding:0 10%;
 }
 
 .item-select {
-  width: 75%; /* Or whatever you'd like the width to be */
+  width: 75%;
 }
 
 .item-select select {
@@ -258,7 +252,6 @@ padding-left:18%;
 	border-bottom: 15px solid transparent;
 
 }
-
 /*end of member page*/
 
 /*This is to show the dropdown in the header*/
@@ -267,7 +260,8 @@ padding-left:18%;
   margin-left:10%;
   height:7.2%;
 }
-/*end*/
+/*end of dropdown*/
+
 /*search resources page*/
 #searchResoure .item-content{
   padding: 0px 0px 0px 10px !important;
@@ -283,7 +277,7 @@ padding-left:18%;
 #resources i{
   font-size:40px;
 }
-/*end*/
+/*end of search resource*/
 
 /*Add Resources*/
 #addResource{
@@ -294,7 +288,7 @@ padding-left:18%;
 #textfield{
   height:47px !important;
 }
-/*end*/
+/*end of add resource*/
 /*update profile template*/
 img{
   width:128px;
@@ -304,10 +298,13 @@ img{
 #profilePic{
   padding:15% 5% 0%;
 }
+/*end of update profile*/
 
+/*view resource template*/
 .item-available{
     color: green;
     font-size: 30px !important;
-    text-align: center;    
-}
-/*end*/
+    text-align: center;
+  }
+  /*end of view resource template*/
+  /*end of file*/

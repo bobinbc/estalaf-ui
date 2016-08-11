@@ -1,12 +1,14 @@
+<!--This is the template for create club-->
 <ion-view style="margin-top:10%">
-
+  <!--This is the form for creating club -->
   <form name="createClubForm" ng-submit="createClub()">
+    <!--This textbox for club name-->
     <div class="list list-inset" id="createclubForm">
       <label class="item item-input padding">
         <input type="text" placeholder="Club Name" ng-model="clubName" required>
       </label>
     </div>
-
+    <!--This is textarea for description-->
     <div class="list list-inset">
       <label class="item item-input padding">
         <textarea type="text" placeholder="Description" rows="10" ng-model="clubDescription" required>
@@ -14,7 +16,7 @@
       </label>
     </div>
 
-
+    <!--This is submit button-->
     <div class="padding">
       <button class="button button-block button-positive"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Create Club</button>
     </div>

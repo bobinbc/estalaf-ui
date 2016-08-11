@@ -2,7 +2,29 @@
 #clubsDropDown{
   position: fixed;
 }
+
+#clubs{
+    font-weight: bold;
+    padding-left: 24%;
+}
+
+/*This is to diplay the text box*/
+#clubTextfield{
+    z-index: 1000;
+    margin-left: 18%;
+    width: 250px;
+    height:45px;
+}
+
+#showIcon{
+  z-index:1000;
+}
+
 /*end of index page*/
+#displayName{
+  font-weight:bold;
+  padding-left: 24%
+}
 
 /*Registration Template*/
 
@@ -232,7 +254,7 @@ padding-left:18%;
 	height: 0;
   margin-top:17px;
 	border-top: 15px solid transparent;
-	border-right: 30px solid #ef473a;
+	border-right: 30px solid #d9534f;
 	border-bottom: 15px solid transparent;
 
 }
@@ -271,5 +293,21 @@ padding-left:18%;
 
 #textfield{
   height:47px !important;
+}
+/*end*/
+/*update profile template*/
+img{
+  width:128px;
+  height:128px;
+}
+
+#profilePic{
+  padding:15% 5% 0%;
+}
+
+.item-available{
+    color: green;
+    font-size: 30px !important;
+    text-align: center;    
 }
 /*end*/

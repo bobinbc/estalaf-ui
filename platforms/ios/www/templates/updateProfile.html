@@ -1,0 +1,36 @@
+<ion-view>
+
+ <div id="profilePic"><img src="./img/pic.jpeg" alt="Profile Pic"></div>
+
+ <form name="updateForm" ng-submit="updateForm.$valid && updateSubmit()" novalidate>
+   <div class="list list-inset">
+     <label class="item item-input" ng-class="{regfail:(updateForm.updateFirstname.$invalid)||(updateForm.$submitted),regsuccess:updateForm.updateFirstname.$valid}">
+       <input type="text" placeholder="First Name" name="updateFirstname" class="input" ng-model="firstName" ng-pattern="/^[a-zA-Z]*$/" required>
+     </label>
+   </div>
+
+    <div class="list list-inset">
+     <label class="item item-input item-floating-label" ng-class="{regfail:( updateForm.updateLastname.$invalid)||( updateForm.$submitted),regsuccess: updateForm.updateLastname.$valid}">
+       <input type="text" placeholder="Last Name" name="updateLastname" class="input" ng-model="lastName" ng-pattern="/^[a-zA-Z]*$/" required>
+     </label>
+   </div>
+
+   <div class="list list-inset">
+     <label class="item item-input item-floating-label">
+      <input type="text" placeholder="Old Password" name="updateEmail" class="input" ng-model="old" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" readonly>
+     </label>
+   </div>
+
+   <div class="list list-inset">
+     <label class="item item-input item-floating-label" ng-class="{regfail:(updateForm.updatePassword.$dirty && updateForm.updatePassword.$invalid)||(updateForm.updatePassword.$pristine && updateForm.$submitted),regsuccess:updateForm.updatePassword.$dirty && updateForm.updatePassword.$valid}">
+      <input type="password" placeholder="New Password" name="updatePassword" class="input" ng-model="password" ng-Minlength="6" ng-Maxlength="12" ng-pattern="/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!,@,$,%,&,?])/" required>
+     </label>
+   </div>
+
+   <div class="padding-horizontal">
+     <button class="button button-block button-positive "><i class="icon ion-person"></i> Edit Account
+     </button>
+   </div>
+ </form>
+
+  </ion-view>

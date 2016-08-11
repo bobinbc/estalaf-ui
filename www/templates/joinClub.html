@@ -1,25 +1,30 @@
+<!--This is the template for join club-->
 <ion-view hide-nav-bar="true">
   <div class="bar bar-header bar-positive">
     <h1 class="title"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i> Join Club</h1>
   </div>
+  <!--This is the form for join club-->
   <form name="joinClubForm" ng-submit="joinClubForm.$valid &&joinClub()" novalidate>
     <div class="row responsive-md join">
+      <!--This is the text box for club code-->
       <label class="item item-input" id="joinClubLabel" ng-class='{fail:(joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$invalid ||(joinClubForm.clubCode.$pristine && joinClubForm.$submitted)),success:joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$valid}'>
         <span class="input-label">Club Code</span>
         <input type="text" name="clubCode" ng-model="clubCode" required>
         <i class="fa fa-times-circle fa-lg " aria-hidden="true" ng-show="joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$invalid ||(joinClubForm.clubCode.$pristine && joinClubForm.$submitted)" id="joinPass"></i><i class="fa fa-check-circle  fa-lg"
             aria-hidden="true" ng-show="joinClubForm.clubCode.$dirty && joinClubForm.clubCode.$valid" id="joinFail"></i>
       </label>
+      <!--This is submit button-->
     </div>
     <div class="row responsive-md padding-top padding-horizontal">
       <button class="button button-block button-positive"> <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Join Club</button>
     </div>
   </form>
 
-    <div id="joinClubP">
-      <p>Do you want to create the club?</P>
-    </div>
+  <div id="joinClubP">
+    <p>Do you want to create the club?</P>
   </div>
+  </div>
+  <!--This is button for moving to create club page-->
   <div class="row responsive-md padding">
     <button class="button button-block button-positive" ng-click="join()"> <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Create Club</button>
   </div>

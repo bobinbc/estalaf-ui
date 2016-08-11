@@ -19,26 +19,12 @@
 
   <!-- your app's js -->
   <script src="js/app.js"></script>
- <script src="js/controllers.js"></script>
-    <!-- controllers -->
-   <!-- <script src="controllers/maincontroller.js"></script>
-    <script src="controllers/registercontroller.js"></script>
-    <script src="controllers/logincontroller.js"></script>
-    <script src="controllers/homecontroller.js"></script>
-    <script src="controllers/joincontroller.js"></script>
-    <script src="controllers/membercontroller.js"></script>
-    <script src="controllers/viewcontroller.js"></script>
-    <script src="controllers/updatecontroller.js"></script>
-    <script src="controllers/signoutcontroller.js"></script>
-    <script src="controllers/createcontroller.js"></script>
-    <script src="controllers/dropdowncontroller.js"></script>
-    <script src="controllers/resources/addcontroller.js"></script>
-    <script src="controllers/resources/scancontroller.js"></script>
-    <script src="controllers/resources/searchcontroller.js"></script> -->
+  <script src="js/controllers.js"></script>
 
 </head>
 
 <body ng-app="estalaf">
+  <!-- This is the side menu for the app-->
   <ion-side-menus enable-menu-with-back-views="true">
     <ion-side-menu-content>
       <ion-nav-bar class="bar-positive">
@@ -46,17 +32,19 @@
           <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
           </button>
         </ion-nav-buttons>
-         <div ng-controller="dropDownCtrl">
-        <label class="item item-input item-select" id="clubsDropDown" >
-          <i id="showIcon" class="fa fa-user-secret fa-lg" aria-hidden="true"></i>
-          <select id="clubs"></select>
-        </label>
 
+
+          <!-- This is the drop down for displaying the clubs in the app-->
+          <label class="item item-input item-select" id="clubsDropDown">
+            <i id="showIcon" class="fa fa-user-secret fa-lg" aria-hidden="true"></i>
+            <select id="clubs"></select>
+          </label>
+          <!--This is the text box for displaying the club in the app-->
           <label class="item item-input" id="clubTextfield">
             <i id="showAdminIcon" class="fa fa-user-secret fa-lg" aria-hidden="true"></i>
             <input type="text" id="displayName" readonly>
           </label>
-        </div>
+
       </ion-nav-bar>
       <ion-nav-view>
 
@@ -79,13 +67,10 @@
           <ion-item id="edit" menu-close href="#/update">
             <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i> Edit Profile
           </ion-item>
-          <ion-item menu-close id="notification" href="">
-            <i class="fa fa-bell fa-lg" aria-hidden="true"></i> Notification
-          </ion-item>
           <ion-item menu-close id="search" href="#/searchResource">
             <i class="fa fa-search fa-lg" aria-hidden="true"></i> Search
           </ion-item>
-          <ion-item menu-close id="join" href="#/joinClub">
+          <ion-item menu-close id="join" ng-click="popup()">
             <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Join Club
           </ion-item>
           <ion-item menu-close href="#/create" id="create">
@@ -101,7 +86,6 @@
       </ion-content>
     </ion-side-menu>
   </ion-side-menus>
-
 </body>
 
 </html>

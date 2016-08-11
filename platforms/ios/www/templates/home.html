@@ -1,4 +1,5 @@
 <ion-view style="margin-top:10%">
+
   <div class="padding">
     <div id="range">
       <ul>
@@ -6,7 +7,7 @@
       <div id="name">Resources</div>
       <label class="toggle">
         <i class="fa fa-minus-circle fa-2x" aria-hidden="true"></i>
-        <input type="checkbox">
+        <input type="checkbox" ng-model="toggle">
         <div class="track">
           <div class="handle"></div>
         </div>
@@ -21,7 +22,7 @@
     <div class="col col-50 col-offset-10" id='scanBarcode'>
       <span class="fa-stack fa-5x fa menu-blob" id="blob">
       <i class="fa fa-circle fa-stack-1x blue-btn"></i>
-      <i class="fa fa-barcode  fa-stack-1x" aria-hidden="true" style='color:white' ng-click="scanBarcode()" ></i>
+      <i class="fa fa-barcode  fa-stack-1x" aria-hidden="true" style='color:white' ng-click="scanBarcode()"></i>
     </span>
     </div>
   </div>

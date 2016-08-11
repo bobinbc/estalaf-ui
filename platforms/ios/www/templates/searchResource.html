@@ -1,13 +1,11 @@
 <ion-view style="margin-top:9%">
-    <ion-list show-delete="false" can-swipe="true" ng-repeat="item in items">
+    <input type="text" placeholder="Search Text" name="searchTxt" class="input" ng-model="searchText">
+    <ion-list show-delete="false" ng-repeat="item in items| filter: searchText" >
         <ion-item class="item" id="searchResoure">
-            <h2 id="resources"><i class="ion-filing" aria-hidden="true"></i>  <b>{{item.first}}</b></h2>
-            <div id="showSwipe"></div>
-            <ion-option-button ng-click="reserve({{item.id}}); items.splice($index, 1)"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></ion-option-button>
-            <ion-option-button class="button-assertive" ng-click="waitlist({{item.id}}); items.splice($index, 1)"><i class=" fa fa-trash-o fa-2x" aria-hidden="true"></i></ion-option-button>
+            <h2 id="resources" ng-click="reserve({{item}})"><i class="ion-filing" aria-hidden="true"></i>  <b>{{item.name}}</b></h2>
         </ion-item>
     </ion-list>
-    <div class="card" id="noMember">
+    <div class="card" ng-if="noMember <= 0">
         <div class="item item-text-wrap">
             <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i> <b>There are no resources added to this club</b>
         </div>

@@ -1,23 +1,24 @@
+<!--This is the home template-->
 <ion-view style="margin-top:10%">
-
+  <!--This is the toggle button-->
   <div class="padding">
     <div id="range">
       <ul>
         <li id="resource">
-      <div id="name">Resources</div>
-      <label class="toggle">
-        <i class="fa fa-minus-circle fa-2x" aria-hidden="true"></i>
-        <input type="checkbox" ng-model="toggle">
-        <div class="track">
-          <div class="handle"></div>
-        </div>
-         <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-      </label>
-
-    </li>
-    </ul>
+          <div id="name">Resources</div>
+          <label class="toggle">
+            <i class="fa fa-minus-circle fa-2x" aria-hidden="true"></i>
+            <input type="checkbox" ng-model="toggle">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+            <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+          </label>
+        </li>
+      </ul>
     </div>
   </div>
+  <!--This is the scan button-->
   <div class="row scanButton">
     <div class="col col-50 col-offset-10" id='scanBarcode'>
       <span class="fa-stack fa-5x fa menu-blob" id="blob">
@@ -28,6 +29,7 @@
   </div>
   <div id="or">OR</div>
   </div>
+  <!--This is link for manual entry-->
   <div id="hideClick">
     Want to do manual entry? <a href="#/addResource">Click here</a>
   </div>

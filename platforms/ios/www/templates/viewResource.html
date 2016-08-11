@@ -1,0 +1,33 @@
+<ion-view style="margin-top:10%">
+  <form name="viewResourceForm" ng-submit="viewResource()">
+
+    <div class="list list-inset" id="addResource">
+      <label class="item item-input">
+        <input type="text" placeholder="Resource code" ng-model="resCode"  required>
+      </label>
+    </div>
+
+    <div class="padding">
+      <label class="item item-input">
+        <input type="text" placeholder="Resource Name" ng-model="resName" required>
+      </label>
+    </div>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <textarea placeholder="Description" rows="10" ng-model="resDescription" required>
+        </textarea>
+      </label>
+    </div>
+
+    <div class="padding" ng-if="borrowStatus <= 0">
+      <button class="button button-block button-positive"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Waitlist Resources</button>
+    </div>
+
+    <div class="padding" ng-if="borrowStatus > 0 ">
+        <label class="item item-available"> Resource Available </label>
+        
+<!--      <button class="button button-block button-positive"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> Borrow Resources</button>-->
+    </div>
+  </form>
+</ion-view>
